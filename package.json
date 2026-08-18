@@ -1,0 +1,16 @@
+{
+  "name": "ai-industrialization-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blog for the AI Industrialization team, IBM Research — and the place blog topics are proposed, approved, and scheduled.",
+  "type": "module",
+  "scripts": {
+    "build": "node build/build.mjs",
+    "check": "node build/build.mjs --check",
+    "serve": "node build/build.mjs && node --run serve:only",
+    "serve:only": "node -e \"const{createServer}=require('node:http'),{readFileSync,existsSync,statSync}=require('node:fs'),{join,extname}=require('node:path');const T={'.html':'text/html','.css':'text/css','.js':'text/javascript'};createServer((q,s)=>{let p=join('site',decodeURIComponent(q.url.split('?')[0]));if(existsSync(p)&&statSync(p).isDirectory())p=join(p,'index.html');if(!existsSync(p)){s.writeHead(404);return s.end('not found')}s.writeHead(200,{'content-type':T[extname(p)]||'application/octet-stream'});s.end(readFileSync(p))}).listen(8000,()=>console.log('http://localhost:8000'))\""
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

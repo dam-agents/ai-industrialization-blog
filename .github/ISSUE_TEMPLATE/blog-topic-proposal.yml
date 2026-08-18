@@ -1,0 +1,77 @@
+name: Blog topic proposal
+description: Suggest a topic for the AI Industrialization blog
+title: "Topic: "
+labels: ["topic-proposal", "needs-leadership-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals start as **ideas**. Leadership reviews them, and approved topics
+        get a publish date and appear on the public calendar as "Coming soon".
+        Nothing here reaches the public site before that.
+
+  - type: input
+    id: title
+    attributes:
+      label: Working title
+      description: Can change later — this is just something to argue about.
+      placeholder: Never serve agent output from your own origin
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tag
+    attributes:
+      label: Area
+      options:
+        - Agent infrastructure
+        - Inference at scale
+        - Autonomous experimentation
+        - Operational data
+        - Observability
+        - Engineering
+        - Infrastructure
+        - Security
+        - Design
+        - Insight
+        - Guide
+        - Introductions
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: blurb
+    attributes:
+      label: What's the post about?
+      description: Two or three sentences, as they'd read on a card on the site.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this, and why now?
+      description: |
+        What have we actually learned or built that makes this worth a post? House
+        style is field notes over announcements — a specific thing that worked or
+        didn't beats a survey.
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Who would write it?
+      description: Leave blank if you're proposing the topic but not writing it.
+      placeholder: Jenna Winkler
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked [IDEAS.md](../blob/main/IDEAS.md) and this isn't already proposed
+          required: true
+        - label: Nothing here is confidential or unreleased in a way that needs clearing first
+          required: true
