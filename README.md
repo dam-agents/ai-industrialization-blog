@@ -78,5 +78,18 @@ site/              build output (gitignored)
 
 ## Deploying
 
-Every push to `main` builds and deploys via `.github/workflows/deploy.yml`.
-One-time setup: **Settings → Pages → Source: GitHub Actions**.
+The site is served from the **`gh-pages`** branch, which holds only generated
+output. To publish the current `main`:
+
+```bash
+./build/publish.sh
+```
+
+One-time setup: **Settings → Pages → Source → `Deploy from a branch` →
+`gh-pages` / `/ (root)`**.
+
+> **Deploying isn't automated yet.** The CI workflows that would build and
+> deploy on push couldn't be committed — the agent's GitHub token has no
+> `workflows` scope. The two files are ready to paste in
+> **[docs/CI-WORKFLOWS.md](docs/CI-WORKFLOWS.md)**; anyone with push access can
+> land them in a minute, and then this script is no longer needed.
