@@ -13,7 +13,7 @@ _None._
 
 ## Approved, not yet dated
 
-_None._
+- [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) — approved by Darrell Reimer
 
 ## Published
 

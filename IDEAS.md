@@ -11,8 +11,8 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **18** |
-| Approved, needs a date (`approved`) | **0** |
+| Awaiting review (`idea`) | **17** |
+| Approved, needs a date (`approved`) | **1** |
 | Scheduled or published | **0** |
 | Declined | **0** |
 
@@ -21,15 +21,16 @@ a file to `content/topics/` with `status: idea`.
 Leadership has said yes. These need an author and a `publish_date` to move onto
 the [calendar](CALENDAR.md).
 
-_None._
-
-## Awaiting leadership review
-
-Ideas by area: Insight (7) · Guide (3) · Design (2) · Agent infrastructure (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Observability (1) · Security (1)
-
 | Topic | Tag | Proposed by | Authors |
 |---|---|---|---|
 | [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) | Design | Slack U0649BJSAS0 — name to confirm | _unassigned_ |
+
+## Awaiting leadership review
+
+Ideas by area: Insight (7) · Guide (3) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Observability (1) · Security (1)
+
+| Topic | Tag | Proposed by | Authors |
+|---|---|---|---|
 | [Agents don't need better answers. They need somewhere to work.](content/topics/agents-need-somewhere-to-work.md) | Insight | Jenna Winkler | _unassigned_ |
 | [An annotated experiment loop](content/topics/an-annotated-experiment-loop.md) | Guide | Jenna Winkler | _unassigned_ |
 | [Autonomy is a scheduling problem](content/topics/autonomy-is-a-scheduling-problem.md) | Insight | Jenna Winkler | _unassigned_ |
