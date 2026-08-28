@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **19** |
+| Awaiting review (`idea`) | **20** |
 | Approved, needs a date (`approved`) | **1** |
 | Scheduled or published | **0** |
 | Declined | **0** |
@@ -27,7 +27,7 @@ the [calendar](CALENDAR.md).
 
 ## Awaiting leadership review
 
-Ideas by area: Insight (8) · Guide (3) · Observability (2) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Security (1)
+Ideas by area: Insight (9) · Guide (3) · Observability (2) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Security (1)
 
 | Topic | Tag | Proposed by | Authors |
 |---|---|---|---|
@@ -39,6 +39,7 @@ Ideas by area: Insight (8) · Guide (3) · Observability (2) · Agent infrastruc
 | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | Introductions | Jenna Winkler | Jenna Winkler |
 | [Never serve agent output from your own origin](content/topics/never-serve-agent-output-from-your-own-origin.md) | Security | Jenna Winkler | _unassigned_ |
 | [Nobody reads the second approval prompt](content/topics/nobody-reads-the-second-approval-prompt.md) | Insight | Jenna Winkler | _unassigned_ |
+| [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ |
 | [The platform ships the pointer, never the tooling](content/topics/platform-ships-the-pointer.md) | Design | Jenna Winkler | _unassigned_ |
 | [Agents made our research reproducible by accident](content/topics/reproducible-by-accident.md) | Insight | Jenna Winkler | _unassigned_ |
 | [A sealed sandbox that still feels like your own machine](content/topics/sealed-sandbox-that-feels-like-your-own-machine.md) | Engineering | Jenna Winkler | _unassigned_ |
