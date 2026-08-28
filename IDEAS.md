@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **17** |
+| Awaiting review (`idea`) | **18** |
 | Approved, needs a date (`approved`) | **1** |
 | Scheduled or published | **0** |
 | Declined | **0** |
@@ -27,7 +27,7 @@ the [calendar](CALENDAR.md).
 
 ## Awaiting leadership review
 
-Ideas by area: Insight (7) · Guide (3) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Observability (1) · Security (1)
+Ideas by area: Insight (7) · Guide (3) · Observability (2) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Security (1)
 
 | Topic | Tag | Proposed by | Authors |
 |---|---|---|---|
@@ -42,6 +42,7 @@ Ideas by area: Insight (7) · Guide (3) · Agent infrastructure (1) · Design (1
 | [Agents made our research reproducible by accident](content/topics/reproducible-by-accident.md) | Insight | Jenna Winkler | _unassigned_ |
 | [A sealed sandbox that still feels like your own machine](content/topics/sealed-sandbox-that-feels-like-your-own-machine.md) | Engineering | Jenna Winkler | _unassigned_ |
 | [Sharing an agent is lending it](content/topics/sharing-an-agent-is-lending-it.md) | Insight | Jenna Winkler | _unassigned_ |
+| [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ |
 | [The record is the second product](content/topics/the-record-is-the-second-product.md) | Observability | Jenna Winkler | _unassigned_ |
 | [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | _unassigned_ |
 | [When the sandbox needs a whole machine](content/topics/when-the-sandbox-needs-a-whole-machine.md) | Infrastructure | Jenna Winkler | _unassigned_ |
