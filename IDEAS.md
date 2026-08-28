@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **18** |
+| Awaiting review (`idea`) | **19** |
 | Approved, needs a date (`approved`) | **1** |
 | Scheduled or published | **0** |
 | Declined | **0** |
@@ -27,10 +27,11 @@ the [calendar](CALENDAR.md).
 
 ## Awaiting leadership review
 
-Ideas by area: Insight (7) · Guide (3) · Observability (2) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Security (1)
+Ideas by area: Insight (8) · Guide (3) · Observability (2) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Security (1)
 
 | Topic | Tag | Proposed by | Authors |
 |---|---|---|---|
+| [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | _unassigned_ |
 | [Agents don't need better answers. They need somewhere to work.](content/topics/agents-need-somewhere-to-work.md) | Insight | Jenna Winkler | _unassigned_ |
 | [An annotated experiment loop](content/topics/an-annotated-experiment-loop.md) | Guide | Jenna Winkler | _unassigned_ |
 | [Autonomy is a scheduling problem](content/topics/autonomy-is-a-scheduling-problem.md) | Insight | Jenna Winkler | _unassigned_ |
