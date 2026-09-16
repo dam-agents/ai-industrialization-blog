@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **20** |
+| Awaiting review (`idea`) | **7** |
 | Approved, needs a date (`approved`) | **1** |
 | Scheduled or published | **0** |
 | Declined | **0** |
@@ -27,29 +27,16 @@ the [calendar](CALENDAR.md).
 
 ## Awaiting leadership review
 
-Ideas by area: Insight (9) · Guide (3) · Observability (2) · Agent infrastructure (1) · Design (1) · Engineering (1) · Infrastructure (1) · Introductions (1) · Security (1)
+Ideas by area: Insight (3) · Agent infrastructure (1) · Guide (1) · Introductions (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors |
 |---|---|---|---|
 | [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | _unassigned_ |
-| [Agents don't need better answers. They need somewhere to work.](content/topics/agents-need-somewhere-to-work.md) | Insight | Jenna Winkler | _unassigned_ |
-| [An annotated experiment loop](content/topics/an-annotated-experiment-loop.md) | Guide | Jenna Winkler | _unassigned_ |
-| [Autonomy is a scheduling problem](content/topics/autonomy-is-a-scheduling-problem.md) | Insight | Jenna Winkler | _unassigned_ |
 | [From chatbot to teammate](content/topics/from-chatbot-to-teammate.md) | Agent infrastructure | Jenna Winkler | Matous Havlena, Jenna Winkler |
 | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | Introductions | Jenna Winkler | Jenna Winkler |
-| [Never serve agent output from your own origin](content/topics/never-serve-agent-output-from-your-own-origin.md) | Security | Jenna Winkler | _unassigned_ |
-| [Nobody reads the second approval prompt](content/topics/nobody-reads-the-second-approval-prompt.md) | Insight | Jenna Winkler | _unassigned_ |
 | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ |
-| [The platform ships the pointer, never the tooling](content/topics/platform-ships-the-pointer.md) | Design | Jenna Winkler | _unassigned_ |
-| [Agents made our research reproducible by accident](content/topics/reproducible-by-accident.md) | Insight | Jenna Winkler | _unassigned_ |
-| [A sealed sandbox that still feels like your own machine](content/topics/sealed-sandbox-that-feels-like-your-own-machine.md) | Engineering | Jenna Winkler | _unassigned_ |
-| [Sharing an agent is lending it](content/topics/sharing-an-agent-is-lending-it.md) | Insight | Jenna Winkler | _unassigned_ |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ |
-| [The record is the second product](content/topics/the-record-is-the-second-product.md) | Observability | Jenna Winkler | _unassigned_ |
 | [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | _unassigned_ |
-| [When the sandbox needs a whole machine](content/topics/when-the-sandbox-needs-a-whole-machine.md) | Infrastructure | Jenna Winkler | _unassigned_ |
-| [Writing a skill your whole team can use](content/topics/writing-a-skill-your-team-can-use.md) | Guide | Jenna Winkler | _unassigned_ |
-| [You can't schedule a breakthrough, but you can schedule the search](content/topics/you-cant-schedule-a-breakthrough.md) | Insight | Jenna Winkler | _unassigned_ |
 | [Your first research agent, start to finish](content/topics/your-first-research-agent.md) | Guide | Jenna Winkler | _unassigned_ |
 
 ## Declined
