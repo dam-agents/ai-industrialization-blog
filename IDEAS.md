@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **7** |
+| Awaiting review (`idea`) | **6** |
 | Approved, needs a date (`approved`) | **1** |
 | Scheduled or published | **0** |
 | Declined | **0** |
@@ -27,7 +27,7 @@ the [calendar](CALENDAR.md).
 
 ## Awaiting leadership review
 
-Ideas by area: Insight (3) · Agent infrastructure (1) · Guide (1) · Introductions (1) · Observability (1)
+Ideas by area: Insight (3) · Agent infrastructure (1) · Introductions (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors |
 |---|---|---|---|
@@ -37,7 +37,6 @@ Ideas by area: Insight (3) · Agent infrastructure (1) · Guide (1) · Introduct
 | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ |
 | [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | _unassigned_ |
-| [Your first research agent, start to finish](content/topics/your-first-research-agent.md) | Guide | Jenna Winkler | _unassigned_ |
 
 ## Declined
 
