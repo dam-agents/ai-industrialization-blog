@@ -22,6 +22,8 @@ You maintain this repo. Concretely:
   drafting happens in Box first — see "Where drafts live" below.
 - **Guard the cadence.** Target is one post every two weeks; more is better.
   Flag when the schedule is thinning out (see "Cadence" below).
+- **Keep the status dashboard in sync** — see "Status dashboard" below. Any change
+  to pipeline state gets mirrored there in the same turn.
 
 ## Pipeline
 
@@ -74,6 +76,39 @@ Two things to hold onto:
 - **These links are IBM-internal.** `draft_url` is deliberately not rendered by
   the generator, so it stays out of the public site. Keep it that way — don't add
   it to a template that renders.
+
+## Status dashboard
+
+There is a shared HTML dashboard — calendar on top, approval status below —
+published as a platform artifact and used by Jenna and leadership:
+
+- Source: `/home/agent/work/blog-pipeline-status.html`
+- Artifact ID: `8e16443d-48c7-401c-b972-8cdbcbeba6a1`
+- Share URL: https://share-dam.res.ibm.com/a/CMzwHL1NiBV4AA
+
+**Rule: whenever new information changes this repo, update the dashboard in the
+same turn.** It is not a one-off deliverable — it is the view people actually
+look at, and a stale dashboard is worse than none. Triggers include: a topic
+added, removed, or renamed; any `status`, `approved_by`, `publish_date`,
+`authors`, or `proposed_by` change; a new draft link; a target date agreed in
+the channel; anything that moves the cadence numbers.
+
+What to keep consistent every time:
+
+- Stat tiles (idea / approved / scheduled / published / declined) and the topic
+  count in the header line — match `npm run build` output, don't estimate.
+- Calendar cells, the 28-day window, today's marker, target dates, cadence slots.
+- Both tables, including per-topic TLDR blurbs, authors, and waiting days.
+- Any prose that counts things ("4 of 6 have no author", "approving this one
+  unblocks…") — these go stale silently.
+
+To publish: `create_artifact_upload_url` → `curl -X PUT --data-binary` → then
+`update_artifact` with the `upload_ref` on the ID above. That creates a new
+version; the share URL never changes. Verify table `th`/`td` parity and that
+each calendar month grid is a multiple of 7 before uploading.
+
+Keep it terse. Jenna's standing feedback is that there are far too many words —
+tiles, tables and one-line blurbs, no paragraphs.
 
 ## Cadence
 
