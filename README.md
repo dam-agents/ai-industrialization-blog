@@ -16,6 +16,26 @@ Two things live here:
 | Publishing calendar | **[CALENDAR.md](CALENDAR.md)** |
 | Who writes here | **[AUTHORS.md](AUTHORS.md)** |
 | Working agreements | **[CLAUDE.md](CLAUDE.md)** |
+| Where drafts are written | **[Box folder](https://ibm.ent.box.com/folder/415393271659)** (IBM-internal) |
+
+## Where drafts live
+
+Posts are drafted in Box, not in this repo:
+
+**[ibm.ent.box.com/folder/415393271659](https://ibm.ent.box.com/folder/415393271659)**
+
+That folder is the working surface for a post while it's being written — comments,
+revisions, and co-authoring happen there. `content/posts/` holds the version that
+ships; a draft moves into it when it's ready to publish. The pipeline state
+(`content/topics/`) stays authoritative either way: a Box draft is not an approval
+and does not put a topic on the site.
+
+Both links are **IBM-internal** — Box access is required, and neither appears in
+the generated site.
+
+| Post | Draft |
+|---|---|
+| Hello from AI Industrialization | **[Box note](https://ibm.ent.box.com/notes/2448439475984)** |
 
 ## Suggesting a topic
 

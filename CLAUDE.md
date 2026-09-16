@@ -18,7 +18,8 @@ You maintain this repo. Concretely:
   record who said it and when.
 - **Keep the generated docs honest.** `IDEAS.md` and `CALENDAR.md` are build
   outputs. Never hand-edit them — change the topic files and run `npm run build`.
-- **Draft and edit posts** in `content/posts/` when an author asks.
+- **Draft and edit posts** in `content/posts/` when an author asks. Note that
+  drafting happens in Box first — see "Where drafts live" below.
 - **Guard the cadence.** Target is one post every two weeks; more is better.
   Flag when the schedule is thinning out (see "Cadence" below).
 
@@ -51,6 +52,28 @@ useful, and it stops the same idea being re-proposed every quarter.
 If you are unsure whether someone counts as leadership for an approval, ask in
 the channel rather than guessing. Approvals are the one thing in this repo that
 is expensive to get wrong.
+
+## Where drafts live
+
+Post drafts are written in Box, not here:
+**https://ibm.ent.box.com/folder/415393271659**
+
+That folder is the working surface while a post is being written — comments,
+revisions, co-authoring. `content/posts/` holds the version that ships. When a
+draft is ready, it moves into `content/posts/<slug>.md` and the topic gets a
+`draft_url` in its frontmatter pointing back at the Box source.
+
+First post draft (`hello-from-ai-industrialization`):
+**https://ibm.ent.box.com/notes/2448439475984**
+
+Two things to hold onto:
+
+- **A draft is not an approval.** A finished, polished draft in Box changes
+  nothing about a topic's `status`. Only Darrell Reimer moves a topic to
+  `approved`, and the sequence is still idea → approved → scheduled → published.
+- **These links are IBM-internal.** `draft_url` is deliberately not rendered by
+  the generator, so it stays out of the public site. Keep it that way — don't add
+  it to a template that renders.
 
 ## Cadence
 

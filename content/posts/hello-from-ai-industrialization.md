@@ -2,6 +2,7 @@
 lede: "Our first post. Who we are, what we're building, and why research itself is the workload we point AI at."
 sections: Who we are | Where we started | What we'll publish here
 read_time: 6 min read
+draft_url: "https://ibm.ent.box.com/notes/2448439475984"
 ---
 
 Artificial intelligence is remaking what a research organization can do. Most teams start by pointing it at their product. We started by pointing it at the research itself — at how experiments get designed, run, and understood inside IBM Research.
