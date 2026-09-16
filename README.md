@@ -17,6 +17,10 @@ Two things live here:
 | Who writes here | **[AUTHORS.md](AUTHORS.md)** |
 | Working agreements | **[CLAUDE.md](CLAUDE.md)** |
 | Where drafts are written | **[Box folder](https://ibm.ent.box.com/folder/415393271659)** (IBM-internal) |
+| Status dashboard | **[calendar &amp; approvals](https://share-dam.res.ibm.com/a/CMzwHL1NiBV4AA)** |
+
+**Next target: Tue 22 Sep 2026** — *Hello from AI Industrialization*, awaiting
+Darrell's approval. See [CALENDAR.md](CALENDAR.md).
 
 ## Where drafts live
 

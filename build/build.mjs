@@ -71,7 +71,7 @@ function loadTopics() {
     }
     if (!data.title) errors.push(`${file}: missing title`);
 
-    for (const key of ['publish_date', 'proposed_on', 'approved_on']) {
+    for (const key of ['publish_date', 'target_date', 'proposed_on', 'approved_on']) {
       if (data[key] && !validDate(data[key])) {
         errors.push(`${file}: ${key} "${data[key]}" is not a valid YYYY-MM-DD date`);
       }
@@ -122,12 +122,25 @@ function checkCadence(topics) {
   );
   if (upcoming.length < CADENCE_MIN_POSTS) {
     const ready = topics.filter((t) => t.status === 'approved');
+    const targeted = topics.filter(
+      (t) =>
+        t.target_date &&
+        t.status !== 'scheduled' &&
+        t.status !== 'published' &&
+        t.target_date >= todayISO &&
+        t.target_date <= horizon
+    );
     warnings.push(
       `Cadence: only ${upcoming.length} post(s) scheduled in the next ${CADENCE_WINDOW_DAYS} days ` +
         `(target is ${CADENCE_MIN_POSTS}, one every two weeks).` +
         (ready.length
           ? ` ${ready.length} approved topic(s) awaiting a date: ${ready.map((t) => t.slug).join(', ')}.`
-          : ' No approved topics are waiting — the pipeline needs leadership review.')
+          : ' No approved topics are waiting — the pipeline needs leadership review.') +
+        (targeted.length
+          ? ` Target date(s) set but not yet approved: ${targeted
+              .map((t) => `${t.slug} (${t.target_date})`)
+              .join(', ')}.`
+          : '')
     );
   }
 }
@@ -543,13 +556,13 @@ function renderIdeasDoc(topics) {
   const byStatus = (s) => topics.filter((t) => t.status === s);
   const table = (rows) =>
     rows.length
-      ? ['| Topic | Tag | Proposed by | Authors |', '|---|---|---|---|']
+      ? ['| Topic | Tag | Proposed by | Authors | Target |', '|---|---|---|---|---|']
           .concat(
             rows.map(
               (t) =>
                 `| [${t.title}](content/topics/${t.slug}.md) | ${t.tag || '—'} | ${t.proposed_by || '—'} | ${
                   t.authors || '_unassigned_'
-                } |`
+                } | ${t.target_date ? `\`${t.target_date}\`` : '—'} |`
             )
           )
           .join('\n')
@@ -617,6 +630,9 @@ function renderCalendarDoc(topics) {
     .filter((t) => t.status === 'published')
     .sort((a, b) => (b.publish_date || '').localeCompare(a.publish_date || ''));
   const approved = topics.filter((t) => t.status === 'approved');
+  const targeted = topics
+    .filter((t) => t.target_date && !['scheduled', 'published', 'declined'].includes(t.status))
+    .sort((a, b) => a.target_date.localeCompare(b.target_date));
 
   const rows = (list) =>
     list.length
@@ -640,6 +656,27 @@ Target cadence: **one post every two weeks.** More is better.
 
 Only \`scheduled\` and \`published\` topics appear here. Scheduled posts show on the
 public site as "Coming soon"; ideas under review do not appear anywhere public.
+
+## Target dates
+
+Dates the team is aiming for. A \`target_date\` is **not** a commitment and does
+not put a post on the public site — the topic still needs leadership approval,
+then a \`publish_date\`, to become \`scheduled\`.
+
+${
+  targeted.length
+    ? ['| Target | Topic | Status | Blocking |', '|---|---|---|---|']
+        .concat(
+          targeted.map(
+            (t) =>
+              `| \`${t.target_date}\` | [${t.title}](content/topics/${t.slug}.md) | ${t.status} | ${
+                t.status === 'idea' ? 'needs leadership approval' : 'needs a `publish_date`'
+              } |`
+          )
+        )
+        .join('\n')
+    : '_None._'
+}
 
 ## Scheduled
 

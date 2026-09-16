@@ -48,6 +48,18 @@ Transitions that need a human:
 - `scheduled → published` — needs a real post body at
   `content/posts/<slug>.md`. A post with no body is not published.
 
+### Target dates
+
+`target_date` is a date the team is *aiming* for on a topic that is not yet
+`scheduled`. It is not a commitment, it does not put anything on the public site,
+and it never substitutes for approval — an `idea` with a `target_date` is still
+an idea. It exists so the dashboard and `CALENDAR.md` can show intent instead of
+an empty calendar. Only `publish_date` schedules a post, and only after Darrell
+has approved.
+
+Current target: **Hello from AI Industrialization — Tue 2026-09-22**, still
+awaiting Darrell's approval.
+
 `declined` is also leadership-only. Keep declined topics — the reasoning is
 useful, and it stops the same idea being re-proposed every quarter.
 

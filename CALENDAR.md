@@ -7,6 +7,16 @@ Target cadence: **one post every two weeks.** More is better.
 Only `scheduled` and `published` topics appear here. Scheduled posts show on the
 public site as "Coming soon"; ideas under review do not appear anywhere public.
 
+## Target dates
+
+Dates the team is aiming for. A `target_date` is **not** a commitment and does
+not put a post on the public site — the topic still needs leadership approval,
+then a `publish_date`, to become `scheduled`.
+
+| Target | Topic | Status | Blocking |
+|---|---|---|---|
+| `2026-09-22` | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | idea | needs leadership approval |
+
 ## Scheduled
 
 _None._
