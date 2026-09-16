@@ -2,9 +2,9 @@
 title: "A designer's agent needs the codebase, not a style guide"
 tag: Design
 status: approved
-proposed_by: "Slack U0649BJSAS0 — name to confirm"
+proposed_by: "Jamie Jabbour"
 proposed_on: 2026-08-21
-authors:
+authors: "Jamie Jabbour"
 publish_date:
 approved_by: Darrell Reimer
 approved_on: 2026-08-21

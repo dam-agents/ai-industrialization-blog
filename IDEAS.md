@@ -23,7 +23,7 @@ the [calendar](CALENDAR.md).
 
 | Topic | Tag | Proposed by | Authors |
 |---|---|---|---|
-| [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) | Design | Slack U0649BJSAS0 — name to confirm | _unassigned_ |
+| [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) | Design | Jamie Jabbour | Jamie Jabbour |
 
 ## Awaiting leadership review
 

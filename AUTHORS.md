@@ -12,6 +12,7 @@ any particular one. Topics get an author when they move from `approved` to
 | Jenna Winkler | Agent infrastructure, platform design | _none scheduled yet_ |
 | Samantha Dempsey | Design, developer experience | _none scheduled yet_ |
 | Matous Havlena | Agent infrastructure, engineering | _none scheduled yet_ |
+| Jamie Jabbour | Design, agent-assisted design workflow | A designer's agent needs the codebase, not a style guide |
 
 ## Also credited on drafts
 
