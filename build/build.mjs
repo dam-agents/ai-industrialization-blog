@@ -447,7 +447,7 @@ function renderCalendar(site, topics) {
     <div class="wrap">
       <div class="eyebrow"><span class="tick"></span><span class="mono-label dim">Publishing calendar</span></div>
       <h1 class="cal-h1">What's coming</h1>
-      <p class="cal-lede">We aim to publish once every two weeks. Everything below is confirmed and dated.</p>
+      <p class="cal-lede">We aim to publish once every two weeks.</p>
     </div>
   </section>
 
