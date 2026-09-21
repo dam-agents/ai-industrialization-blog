@@ -13,13 +13,13 @@ Dates the team is aiming for. A `target_date` is **not** a commitment and does
 not put a post on the public site — the topic still needs leadership approval,
 then a `publish_date`, to become `scheduled`.
 
-| Target | Topic | Status | Blocking |
-|---|---|---|---|
-| `2026-09-22` | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | idea | needs leadership approval |
+_None._
 
 ## Scheduled
 
-_None._
+| Date | Topic | Authors | Status |
+|---|---|---|---|
+| `2026-09-22` | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | AI Platform Incubation Team | scheduled |
 
 ## Approved, not yet dated
 
