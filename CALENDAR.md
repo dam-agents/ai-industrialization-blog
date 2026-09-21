@@ -17,9 +17,7 @@ _None._
 
 ## Scheduled
 
-| Date | Topic | Authors | Status |
-|---|---|---|---|
-| `2026-09-22` | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | AI Platform Incubation Team | scheduled |
+_None._
 
 ## Approved, not yet dated
 
@@ -27,4 +25,6 @@ _None._
 
 ## Published
 
-_None._
+| Date | Topic | Authors | Status |
+|---|---|---|---|
+| `2026-09-21` | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | AI Platform Incubation Team | published |
