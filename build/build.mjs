@@ -384,7 +384,7 @@ function renderAbout(site) {
   <section class="about-cols-section">
     <div class="wrap about-cols">
       ${site.about.paragraphs
-        .map((p, i) => `<p class="${i === 0 ? 'about-p-lead' : 'about-p'}">${esc(p)}</p>`)
+        .map((p) => `<p class="about-p">${esc(p)}</p>`)
         .join('\n      ')}
     </div>
   </section>
