@@ -11,9 +11,7 @@
   "writingIntro": "Field notes on what worked, what didn't, and what we're still deciding",
   "workloads": [
     { "n": "01", "name": "Agent infrastructure" },
-    { "n": "02", "name": "Inference at scale" },
-    { "n": "03", "name": "Autonomous experimentation" },
-    { "n": "04", "name": "Operational data" }
+    { "n": "02", "name": "Inference at scale" }
   ],
   "about": {
     "heading": "The hard part of AI research isn't just making something work.",
@@ -50,16 +48,6 @@
       "n": "02",
       "title": "Inference at scale",
       "body": "The serving substrate agentic research runs on, tuned for the throughput and cost of long-running autonomous work — so experiments are bounded by ideas, not by capacity."
-    },
-    {
-      "n": "03",
-      "title": "Autonomous experimentation",
-      "body": "Whether one capable agent beats many specialists, how agents should delegate to each other, and how to evaluate work whose path matters as much as its outcome. Open questions we're testing against real workloads, not settled answers."
-    },
-    {
-      "n": "04",
-      "title": "Operational data",
-      "body": "What cost should mean to an agent, not just to the person paying for it. We're exploring how usage becomes something an agent reasons about mid-task, instead of something you find in a report afterward."
     }
   ]
 }
