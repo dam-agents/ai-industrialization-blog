@@ -280,6 +280,7 @@ function renderHome(site, topics) {
               <span>${esc(lead.authors)}</span>
               <span class="rule"></span>
               <span class="mono">${esc(monthYear(lead.publish_date))}</span>
+              ${lead.post?.read_time ? `<span class="rule"></span><span class="mono">${esc(lead.post.read_time)}</span>` : ''}
             </div>
           </div>
           <div class="lead-side">
@@ -307,7 +308,9 @@ function renderHome(site, topics) {
             <p class="card-blurb">${esc(t.blurb)}</p>
             <div class="card-meta">
               <span>${esc(t.authors || (isComing ? 'Author TBC' : ''))}</span>
-              <span class="mono${isComing ? ' accent' : ''}">${isComing ? 'Coming soon' : esc(monthYear(t.publish_date))}</span>
+              <span class="mono${isComing ? ' accent' : ''}">${
+    isComing ? 'Coming soon' : esc(monthYear(t.publish_date)) + (t.post?.read_time ? ` · ${esc(t.post.read_time)}` : '')
+  }</span>
             </div>
           </a>`;
 
@@ -444,7 +447,7 @@ function renderCalendar(site, topics) {
     <div class="wrap">
       <div class="eyebrow"><span class="tick"></span><span class="mono-label dim">Publishing calendar</span></div>
       <h1 class="cal-h1">What's coming</h1>
-      <p class="cal-lede">We aim to publish once every two weeks. Everything below has been approved and dated — topics still under review aren't listed here.</p>
+      <p class="cal-lede">We aim to publish once every two weeks. Everything below is confirmed and dated.</p>
     </div>
   </section>
 
@@ -500,6 +503,7 @@ function renderPost(site, topic, topics) {
           <div class="post-meta-item"><span class="mono-label dim">Authors</span><span>${esc(topic.authors)}</span></div>
           <div class="post-meta-item"><span class="mono-label dim">Published</span><span>${esc(longDate(topic.publish_date))}</span></div>
           <div class="post-meta-item"><span class="mono-label dim">Topic</span><span>${esc(topic.tag)}</span></div>
+          ${post.read_time ? `<div class="post-meta-item"><span class="mono-label dim">Read time</span><span>${esc(post.read_time)}</span></div>` : ''}
         </div>
       </div>
     </header>

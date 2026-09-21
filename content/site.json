@@ -1,14 +1,14 @@
 {
   "org": "IBM Research",
   "name": "AI Industrialization",
-  "tagline": "AI-native research infrastructure for every pillar of the portfolio.",
+  "tagline": "IBM Research's proving ground for emerging AI.",
   "hero": {
     "eyebrow": "Mission",
-    "heading": "We put AI at the core of how IBM Research works.",
-    "lede": "Turning the frontier of AI-native research into infrastructure that accelerates every pillar of the portfolio.",
-    "aside": "Artificial intelligence is remaking what a research organization can do — and computing is where it can move fastest, from the physics of quantum devices to the chips and compilers that power the next era of computation."
+    "heading": "We're IBM Research's proving ground for emerging AI.",
+    "lede": "We turn emerging ideas into things people can actually try, then use what we learn to help decide what should be built, changed, or stopped.",
+    "aside": "We work alongside researchers, not after the research is done — testing the riskiest assumptions early, because we'd rather learn we're wrong this week than prove it six months from now."
   },
-  "writingIntro": "Notes on agents, inference, and autonomous experimentation",
+  "writingIntro": "Field notes on what worked, what didn't, and what we're still deciding",
   "workloads": [
     { "n": "01", "name": "Agent infrastructure" },
     { "n": "02", "name": "Inference at scale" },
@@ -16,50 +16,50 @@
     { "n": "04", "name": "Operational data" }
   ],
   "about": {
-    "heading": "We put AI at the core of how IBM Research works — turning the frontier of AI-native research into infrastructure that accelerates every pillar of the portfolio.",
+    "heading": "The hard part of AI research isn't just making something work.",
     "paragraphs": [
-      "Artificial intelligence is remaking what a research organization can do — and computing is where it can move fastest, from the physics of quantum devices to the chips and compilers that power the next era of computation.",
-      "AI Industrialization operates across the division to bring AI-native research to the core of the division's biggest bets, building common ground in agents, experimentation, inference, and data.",
-      "This work starts with priority workloads: quantum calibration, error correction, and compilation; ASIC chip design; compiler design and kernel synthesis. Each one shortens the path from idea to result and strengthens the platform for the next, directly changing how the division does research."
+      "It's figuring out whether it's worth building, who needs it, and what it takes to make it work beyond the demo. We're a cross-functional team in the AI Platform Research pillar, working at the front edge of AI research, where the technology changes faster than the product can be specified.",
+      "We work alongside researchers, not after the research is done. We identify the assumptions behind an idea, test the riskiest ones early, and turn what we learn into better decisions about where the work should go next — practitioners as much as evaluators, building and iterating on real systems while the questions are still open.",
+      "Right now that means DAM, our open source platform for running long-lived AI agents, and the inference and serving systems underneath it. The projects will change; the questions — what agents need from a platform, what makes agentic work practical to run — probably won't."
     ]
   },
   "principles": [
     {
       "n": "01",
-      "title": "AI at the core",
-      "body": "We embed with teams across the pillars to re-center priority workloads around AI, accelerating the domains where IBM Research has decades of history."
+      "title": "Learn before we build",
+      "body": "The goal isn't to build as fast as possible. It's to find out as fast as possible whether something is worth building."
     },
     {
       "n": "02",
-      "title": "Build once, impact everywhere",
-      "body": "Agent infrastructure, experiment tooling, serving, telemetry — core capabilities, built once, reach every pillar. Each deployment makes the next one faster."
+      "title": "Start small",
+      "body": "Build just enough to answer the question in front of us, then stop or change direction once we have the answer."
     },
     {
       "n": "03",
-      "title": "Moving with the frontier",
-      "body": "We work with researchers across the pillars to push AI itself forward. Lessons from each workload are folded back into the platform, where every team can pick them up."
+      "title": "Stay close to users",
+      "body": "Decisions come from real needs and real use, not from guesses about what people might want."
     }
   ],
   "capabilities": [
     {
       "n": "01",
       "title": "Agent infrastructure",
-      "body": "We build and operate shared infrastructure for AI-native research across the portfolio. Agents run continuously in the cloud — each in an isolated sandbox behind a zero-trust credential gateway — driven from the browser, the CLI, Slack, or on schedules. The platform is harness-agnostic, so teams ride the frontier as it moves."
+      "body": "DAM, our open source platform for running long-lived AI agents — each in an isolated sandbox behind a zero-trust credential gateway, driven from the browser, the CLI, Slack, or on schedules. We're still exploring where the line falls between what the agent handles and what the platform should."
     },
     {
       "n": "02",
       "title": "Inference at scale",
-      "body": "We build the serving substrate that agentic research demands, keeping thousands of concurrent agents supplied with the models they run on. We tune it for the throughput and cost profile of long-running autonomous work, so experiments are bounded by ideas, not capacity."
+      "body": "The serving substrate agentic research runs on, tuned for the throughput and cost of long-running autonomous work — so experiments are bounded by ideas, not by capacity."
     },
     {
       "n": "03",
       "title": "Autonomous experimentation",
-      "body": "We turn agentic exploration into instrumented science. Researchers author design–build–test–learn loops as ordinary code, and the platform observes them live — every stage, span, and score — making campaigns on priority workloads, from quantum algorithm discovery to kernel synthesis, repeatable and comparable."
+      "body": "Whether one capable agent beats many specialists, how agents should delegate to each other, and how to evaluate work whose path matters as much as its outcome. Open questions we're testing against real workloads, not settled answers."
     },
     {
       "n": "04",
       "title": "Operational data",
-      "body": "Running the platform produces a second asset: agent turns, experiment spans, and inference telemetry, collected into an AI-native record of how agents actually solve research problems. That record drives the optimizations that compound — better skills and loops, more efficient serving, and more performant agentic systems with every workload."
+      "body": "What cost should mean to an agent, not just to the person paying for it. We're exploring how usage becomes something an agent reasons about mid-task, instead of something you find in a report afterward."
     }
   ]
 }
