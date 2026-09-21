@@ -11,7 +11,8 @@
   "writingIntro": "Field notes on what worked, what didn't, and what we're still deciding",
   "workloads": [
     { "n": "01", "name": "Agent infrastructure" },
-    { "n": "02", "name": "Inference at scale" }
+    { "n": "02", "name": "Inference at scale" },
+    { "n": "03", "name": "Research validation" }
   ],
   "about": {
     "heading": "The hard part of AI research isn't just making something work.",
@@ -48,6 +49,11 @@
       "n": "02",
       "title": "Inference at scale",
       "body": "The serving substrate agentic research runs on, tuned for the throughput and cost of long-running autonomous work — so experiments are bounded by ideas, not by capacity."
+    },
+    {
+      "n": "03",
+      "title": "Research validation",
+      "body": "Identifying the riskiest assumptions behind an idea and testing them early, alongside researchers rather than after the research is done — so we find out what's worth building before we spend months finding out the hard way."
     }
   ]
 }
