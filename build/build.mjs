@@ -347,7 +347,6 @@ function renderHome(site, topics) {
     <div class="wrap">
       <div class="section-head">
         <h2 class="mono-label dim">Writing from the team</h2>
-        <span class="section-note">${esc(site.writingIntro)}</span>
       </div>
       ${leadCard}
       ${grid.length ? `<div class="card-grid">\n          ${grid.join('\n          ')}\n      </div>` : ''}

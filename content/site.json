@@ -8,7 +8,6 @@
     "lede": "We turn emerging ideas into things people can actually try, then use what we learn to help decide what should be built, changed, or stopped.",
     "aside": "We work alongside researchers, not after the research is done — testing the riskiest assumptions early, because we'd rather learn we're wrong this week than prove it six months from now."
   },
-  "writingIntro": "Field notes on what worked, what didn't, and what we're still deciding",
   "workloads": [
     { "n": "01", "name": "Agent infrastructure" },
     { "n": "02", "name": "Inference at scale" },
