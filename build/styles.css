@@ -295,12 +295,6 @@ a { color: var(--blue); }
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 64px;
 }
-.about-p-lead {
-  font-family: 'IBM Plex Serif', Georgia, serif;
-  font-size: 19px;
-  line-height: 1.68;
-  text-wrap: pretty;
-}
 .about-p { font-size: 17px; line-height: 1.72; color: var(--ink-2); text-wrap: pretty; }
 
 .principles-section { background: var(--bg-alt); border-bottom: 1px solid var(--line); }
