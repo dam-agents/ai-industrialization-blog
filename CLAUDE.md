@@ -57,8 +57,8 @@ an idea. It exists so the dashboard and `CALENDAR.md` can show intent instead of
 an empty calendar. Only `publish_date` schedules a post, and only after Darrell
 has approved.
 
-Current target: **Hello from AI Industrialization — Tue 2026-09-22**, still
-awaiting Darrell's approval.
+First post: **Hello from AI Industrialization — Tue 2026-09-22**, approved by
+Darrell 2026-09-21 and `scheduled`. Next open cadence slot is Tue 2026-10-06.
 
 `declined` is also leadership-only. Keep declined topics — the reasoning is
 useful, and it stops the same idea being re-proposed every quarter.
