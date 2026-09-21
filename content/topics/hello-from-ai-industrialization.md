@@ -4,7 +4,7 @@ tag: Introductions
 status: idea
 proposed_by: Jenna Winkler
 proposed_on: 2026-08-18
-authors: "Jenna Winkler"
+authors: "AI Platform Incubation Team"
 publish_date:
 target_date: 2026-09-22
 approved_by:

@@ -33,7 +33,7 @@ Ideas by area: Insight (3) · Agent infrastructure (1) · Introductions (1) · O
 |---|---|---|---|---|
 | [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | _unassigned_ | — |
 | [From chatbot to teammate](content/topics/from-chatbot-to-teammate.md) | Agent infrastructure | Jenna Winkler | Matous Havlena, Jenna Winkler | — |
-| [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | Introductions | Jenna Winkler | Jenna Winkler | `2026-09-22` |
+| [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | Introductions | Jenna Winkler | AI Platform Incubation Team | `2026-09-22` |
 | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ | — |
 | [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | _unassigned_ | — |
