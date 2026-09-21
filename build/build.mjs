@@ -296,7 +296,7 @@ function renderHome(site, topics) {
         <div class="lead-body">
           <span class="mono-label accent">Nothing published yet</span>
           <h3 class="lead-title">The first post is on its way.</h3>
-          <p class="lead-blurb">Approved topics appear below as soon as they're scheduled, and become posts on their publish date.</p>
+          <p class="lead-blurb">New posts will appear here as soon as they're live.</p>
         </div>
       </article>`;
 
@@ -457,7 +457,7 @@ function renderCalendar(site, topics) {
       ${
         scheduled.length
           ? `<div class="cal-list">\n        ${scheduled.map((t) => row(t, 'scheduled')).join('\n        ')}\n      </div>`
-          : '<p class="cal-empty">Nothing scheduled yet. Approved topics get a date once an author signs up.</p>'
+          : '<p class="cal-empty">Nothing scheduled yet.</p>'
       }
     </div>
   </section>
@@ -479,7 +479,7 @@ ${
   return shell({
     site,
     title: `What's coming — ${site.name}`,
-    description: 'Approved and scheduled posts from the AI Industrialization team.',
+    description: 'Scheduled and published posts from the AI Industrialization team.',
     body,
     nav: 'calendar',
   });
