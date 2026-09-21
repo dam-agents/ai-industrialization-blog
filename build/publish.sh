@@ -23,7 +23,10 @@ node build/build.mjs
 
 STAGE=$(mktemp -d)
 trap 'rm -rf "$STAGE"' EXIT
-cp -r site/. "$STAGE"/
+# Pages serves this branch from /docs, not the branch root, and changing that
+# setting needs Pages admin the token doesn't have — so publish into docs/.
+mkdir -p "$STAGE/docs"
+cp -r site/. "$STAGE/docs"/
 
 cd "$STAGE"
 git init -q
