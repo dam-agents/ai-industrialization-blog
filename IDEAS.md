@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **5** |
+| Awaiting review (`idea`) | **6** |
 | Approved, needs a date (`approved`) | **1** |
 | Scheduled or published | **1** |
 | Declined | **0** |
@@ -27,11 +27,12 @@ the [calendar](CALENDAR.md).
 
 ## Awaiting leadership review
 
-Ideas by area: Insight (3) · Agent infrastructure (1) · Observability (1)
+Ideas by area: Insight (3) · Agent infrastructure (1) · Case study (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
 | [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | _unassigned_ | — |
+| [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
 | [From chatbot to teammate](content/topics/from-chatbot-to-teammate.md) | Agent infrastructure | Jenna Winkler | Matous Havlena, Jenna Winkler | — |
 | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ | — |
