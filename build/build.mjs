@@ -79,8 +79,8 @@ function loadTopics() {
     if (status === 'scheduled' && !data.publish_date) {
       errors.push(`${file}: status is scheduled but publish_date is empty`);
     }
-    if (['approved', 'scheduled', 'published'].includes(status) && !data.approved_by) {
-      errors.push(`${file}: status is ${status} but approved_by is empty — approvals must be attributed`);
+    if (['approved', 'scheduled', 'published'].includes(status) && !data.approved_on) {
+      errors.push(`${file}: status is ${status} but approved_on is empty — record when it was approved`);
     }
 
     // A published topic needs a real body to publish.
@@ -690,7 +690,7 @@ ${rows(scheduled)}
 ${
   approved.length
     ? approved
-        .map((t) => `- [${t.title}](content/topics/${t.slug}.md) — approved by ${t.approved_by || '—'}`)
+        .map((t) => `- [${t.title}](content/topics/${t.slug}.md) — approved`)
         .join('\n')
     : '_None._'
 }

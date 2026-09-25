@@ -40,8 +40,8 @@ only thing that decides where it shows up.
 
 Transitions that need a human:
 
-- `idea → approved` — **leadership only.** Record `approved_by` and
-  `approved_on`. Do not set this because a topic seems good, because an author
+- `idea → approved` — **leadership only.** Record `approved_on`; don't name
+  who approved. Do not set this because a topic seems good, because an author
   wants to write it, or because it has been sitting a while.
 - `approved → scheduled` — needs a `publish_date` (ISO `YYYY-MM-DD`) and an
   author who has agreed to write it.
@@ -106,7 +106,7 @@ published as a platform artifact and used by Jenna and leadership:
 **Rule: whenever new information changes this repo, update the dashboard in the
 same turn.** It is not a one-off deliverable — it is the view people actually
 look at, and a stale dashboard is worse than none. Triggers include: a topic
-added, removed, or renamed; any `status`, `approved_by`, `publish_date`,
+added, removed, or renamed; any `status`, `approved_on`, `publish_date`,
 `authors`, or `proposed_by` change; a new draft link; a target date agreed in
 the channel; anything that moves the cadence numbers.
 
