@@ -222,6 +222,37 @@ a { color: var(--blue); }
 }
 .lead-side-cta { padding-top: 20px; font-size: 15px; color: var(--blue-light); }
 
+.next-up {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--blue);
+  padding: 44px 56px 40px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.next-up:hover { border-color: var(--blue); }
+.next-up-title {
+  margin-top: 16px;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  max-width: 32ch;
+  text-wrap: pretty;
+}
+.next-up-blurb {
+  margin-top: 16px;
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink-3);
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+.next-up .lead-meta { margin-top: 28px; }
+
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2px; }
 
 .card {
@@ -547,6 +578,8 @@ a { color: var(--blue); }
   .hero-lede { font-size: 18px; }
   .lead-body, .lead-side { padding: 32px 24px; }
   .lead-title { font-size: 28px; }
+  .next-up { padding: 32px 24px; }
+  .next-up-title { font-size: 24px; }
   .about-h1 { font-size: 34px; }
   .post-h1 { font-size: 34px; }
   .post-lede { font-size: 19px; }

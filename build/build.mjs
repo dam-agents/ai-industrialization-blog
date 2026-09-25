@@ -311,7 +311,22 @@ function renderHome(site, topics) {
             </div>
           </a>`;
 
-  const grid = [...rest.map((t) => card(t, false)), ...coming.map((t) => card(t, true))];
+  // The nearest scheduled post gets its own teaser; later ones stay in the grid.
+  const [next, ...later] = coming;
+  const nextUp = next
+    ? `<a class="next-up" href="calendar.html">
+        <span class="mono-label accent">Up next · ${esc(longDate(next.publish_date))}</span>
+        <h3 class="next-up-title">${esc(next.title)}</h3>
+        <p class="next-up-blurb">${esc(next.blurb)}</p>
+        <div class="lead-meta">
+          <span>${esc(next.authors || 'Author TBC')}</span>
+          <span class="rule"></span>
+          <span class="mono accent">See what's coming →</span>
+        </div>
+      </a>`
+    : '';
+
+  const grid = [...rest.map((t) => card(t, false)), ...later.map((t) => card(t, true))];
 
   const body = `<main>
   <section class="hero-section">
@@ -346,6 +361,7 @@ function renderHome(site, topics) {
         <h2 class="mono-label dim">Writing from the team</h2>
       </div>
       ${leadCard}
+      ${nextUp}
       ${grid.length ? `<div class="card-grid">\n          ${grid.join('\n          ')}\n      </div>` : ''}
     </div>
   </section>
