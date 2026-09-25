@@ -79,6 +79,9 @@ function loadTopics() {
     if (status === 'scheduled' && !data.publish_date) {
       errors.push(`${file}: status is scheduled but publish_date is empty`);
     }
+    if (status === 'scheduled' && !data.authors) {
+      errors.push(`${file}: status is scheduled but has no authors — don't schedule a post nobody is writing`);
+    }
 
     // A published topic needs a real body to publish.
     const postPath = join(postsDir, file);

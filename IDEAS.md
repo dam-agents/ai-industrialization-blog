@@ -11,15 +11,15 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **5** |
-| Scheduled or published | **3** |
+| Ideas, not yet dated (`idea`) | **6** |
+| Scheduled or published | **2** |
 | Declined | **0** |
 
 ## Ideas
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Insight (2) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Insight (3) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
@@ -28,6 +28,7 @@ Ideas by area: Insight (2) · Case study (1) · Design (1) · Observability (1)
 | [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
 | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ | — |
+| [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | _unassigned_ | — |
 
 ## Declined
 

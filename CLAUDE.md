@@ -39,7 +39,8 @@ only thing that decides where it shows up.
 Transitions that need a human:
 
 - `idea → scheduled` — only when the team tells you a date. Needs a
-  `publish_date` (ISO `YYYY-MM-DD`). There is no approval step (dropped
+  `publish_date` (ISO `YYYY-MM-DD`) **and an author** — the build fails on a
+  scheduled post with no `authors`. There is no approval step (dropped
   2026-09-25) — don't add one back or record who signed off.
 - `scheduled → published` — needs a real post body at
   `content/posts/<slug>.md`. A post with no body is not published.
@@ -55,7 +56,7 @@ First post: **Hello from AI Industrialization — published Mon 2026-09-21**.
 
 Cadence (set 2026-09-25): **a new post every other Wednesday**, starting Wed
 2026-09-30 ("Agents as Teammates: Sharing Workspaces and Context"). Slots after
-that: 2026-10-14 ("The team brain"), 10-28, 11-11, 11-25, and every 14 days on.
+that: 2026-10-14, 10-28, 11-11, 11-25, and every 14 days on.
 
 Keep declined topics — the reasoning is
 useful, and it stops the same idea being re-proposed every quarter.

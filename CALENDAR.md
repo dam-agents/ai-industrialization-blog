@@ -20,7 +20,6 @@ _None._
 | Date | Topic | Authors | Status |
 |---|---|---|---|
 | `2026-09-30` | [Agents as Teammates: Sharing Workspaces and Context](content/topics/agents-as-teammates.md) | Sarah Miller, Jenna Winkler, Matous Havlena | scheduled |
-| `2026-10-14` | [The team brain](content/topics/the-team-brain.md) | _unassigned_ | scheduled |
 
 ## Published
 
