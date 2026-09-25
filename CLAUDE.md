@@ -54,12 +54,16 @@ Transitions that need a human:
 `scheduled`. It is not a commitment, it does not put anything on the public site,
 and it never substitutes for approval — an `idea` with a `target_date` is still
 an idea. It exists so the dashboard and `CALENDAR.md` can show intent instead of
-an empty calendar. Only `publish_date` schedules a post, and only after Darrell
-has approved.
+an empty calendar. Only `publish_date` schedules a post, and only after it has
+been approved.
 
 First post: **Hello from AI Industrialization — published Mon 2026-09-21**,
-approved by Darrell the same day. Next open cadence slot is Tue 2026-10-06, with
-nothing dated for it.
+approved by Darrell the same day. Darrell's sign-off was needed for that first
+post only; approvals are no longer Darrell-only.
+
+Cadence (set 2026-09-25): **a new post every other Wednesday**, starting Wed
+2026-09-30 ("Agents as Teammates: Sharing Workspaces and Context"). Slots after
+that: 2026-10-14, 10-28, 11-11, 11-25, and every 14 days on.
 
 `declined` is also leadership-only. Keep declined topics — the reasoning is
 useful, and it stops the same idea being re-proposed every quarter.
@@ -84,7 +88,7 @@ First post draft (`hello-from-ai-industrialization`):
 Two things to hold onto:
 
 - **A draft is not an approval.** A finished, polished draft in Box changes
-  nothing about a topic's `status`. Only Darrell Reimer moves a topic to
+  nothing about a topic's `status`. Only an approver moves a topic to
   `approved`, and the sequence is still idea → approved → scheduled → published.
 - **These links are IBM-internal.** `draft_url` is deliberately not rendered by
   the generator, so it stays out of the public site. Keep it that way — don't add
@@ -125,7 +129,7 @@ tiles, tables and one-line blurbs, no paragraphs.
 
 ## Cadence
 
-Target: **one post every two weeks.** When you build, the generator warns if
+Target: **one post every two weeks, on Wednesdays.** When you build, the generator warns if
 fewer than two `scheduled` posts have dates in the next 28 days. When that
 happens, say so — in the channel or the PR — and name the `approved` topics that
 are ready for a date. A thin schedule is the failure mode to watch for, and it
