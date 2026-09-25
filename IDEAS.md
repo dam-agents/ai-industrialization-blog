@@ -3,7 +3,7 @@
 # Blog topic ideas
 
 Every topic proposed for the blog. **Nothing here is on the public site** until
-leadership approves it and it gets a date — see [CLAUDE.md](CLAUDE.md) for how a
+it gets a date — see [CLAUDE.md](CLAUDE.md) for how a
 topic moves through the pipeline.
 
 To suggest a topic: open an issue with the **Blog topic proposal** template, or add
@@ -11,31 +11,23 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Awaiting review (`idea`) | **5** |
-| Approved, needs a date (`approved`) | **1** |
-| Scheduled or published | **2** |
+| Ideas, not yet dated (`idea`) | **5** |
+| Scheduled or published | **3** |
 | Declined | **0** |
 
-## Approved — waiting for a date
+## Ideas
 
-Leadership has said yes. These need an author and a `publish_date` to move onto
-the [calendar](CALENDAR.md).
+These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
+
+Ideas by area: Insight (2) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
 | [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) | Design | Jamie Jabbour | Jamie Jabbour | — |
-
-## Awaiting leadership review
-
-Ideas by area: Insight (3) · Case study (1) · Observability (1)
-
-| Topic | Tag | Proposed by | Authors | Target |
-|---|---|---|---|---|
 | [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | _unassigned_ | — |
 | [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
 | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ | — |
-| [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | _unassigned_ | — |
 
 ## Declined
 

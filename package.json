@@ -2,7 +2,7 @@
   "name": "ai-industrialization-blog",
   "version": "1.0.0",
   "private": true,
-  "description": "Blog for the AI Industrialization team, IBM Research — and the place blog topics are proposed, approved, and scheduled.",
+  "description": "Blog for the AI Industrialization team, IBM Research — and the place blog topics are proposed and scheduled.",
   "type": "module",
   "scripts": {
     "build": "node build/build.mjs",

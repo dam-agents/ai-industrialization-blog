@@ -4,7 +4,7 @@ People who plan to write for the AI Industrialization blog. Hand-maintained — 
 yourself with a PR, or ask `@dam` in the blog channel to add you.
 
 Being listed here means you're willing to take a topic; it doesn't commit you to
-any particular one. Topics get an author when they move from `approved` to
+any particular one. Topics get an author when they are
 `scheduled` — see [CLAUDE.md](CLAUDE.md).
 
 | Author | Areas they're interested in | Committed topics |
@@ -26,12 +26,11 @@ they're writing here. Worth checking before the post goes out:
 
 1. Add a row above with your name and the areas you'd want to write about.
 2. If you already have a topic in mind, open a **Blog topic proposal** issue —
-   don't add it straight to the calendar. Leadership approves topics before they
-   get a date.
+   don't add it straight to the calendar.
 
 ## Cadence expectation
 
 The team target is **one post every two weeks, on Wednesdays**. With three or four active
 authors that's roughly one post each per two months — light enough to be real
 alongside the day job. If the schedule starts thinning out, `@dam` will flag it
-in the channel with the approved topics that are ready for a date.
+in the channel with the ideas that could take a date.

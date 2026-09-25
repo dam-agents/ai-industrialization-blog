@@ -13,7 +13,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'site');
 const CHECK_ONLY = process.argv.includes('--check');
 
-const STATUSES = ['idea', 'approved', 'scheduled', 'published', 'declined'];
+const STATUSES = ['idea', 'scheduled', 'published', 'declined'];
 const CADENCE_WINDOW_DAYS = 28;
 const CADENCE_MIN_POSTS = 2;
 
@@ -71,16 +71,13 @@ function loadTopics() {
     }
     if (!data.title) errors.push(`${file}: missing title`);
 
-    for (const key of ['publish_date', 'target_date', 'proposed_on', 'approved_on']) {
+    for (const key of ['publish_date', 'target_date', 'proposed_on']) {
       if (data[key] && !validDate(data[key])) {
         errors.push(`${file}: ${key} "${data[key]}" is not a valid YYYY-MM-DD date`);
       }
     }
     if (status === 'scheduled' && !data.publish_date) {
       errors.push(`${file}: status is scheduled but publish_date is empty`);
-    }
-    if (['approved', 'scheduled', 'published'].includes(status) && !data.approved_on) {
-      errors.push(`${file}: status is ${status} but approved_on is empty — record when it was approved`);
     }
 
     // A published topic needs a real body to publish.
@@ -121,7 +118,7 @@ function checkCadence(topics) {
     (t) => t.status === 'scheduled' && t.publish_date >= todayISO && t.publish_date <= horizon
   );
   if (upcoming.length < CADENCE_MIN_POSTS) {
-    const ready = topics.filter((t) => t.status === 'approved');
+    const ideas = topics.filter((t) => t.status === 'idea');
     const targeted = topics.filter(
       (t) =>
         t.target_date &&
@@ -133,11 +130,11 @@ function checkCadence(topics) {
     warnings.push(
       `Cadence: only ${upcoming.length} post(s) scheduled in the next ${CADENCE_WINDOW_DAYS} days ` +
         `(target is ${CADENCE_MIN_POSTS}, one every two weeks).` +
-        (ready.length
-          ? ` ${ready.length} approved topic(s) awaiting a date: ${ready.map((t) => t.slug).join(', ')}.`
-          : ' No approved topics are waiting — the pipeline needs leadership review.') +
+        (ideas.length
+          ? ` ${ideas.length} idea(s) without a date: ${ideas.map((t) => t.slug).join(', ')}.`
+          : ' No ideas are waiting — the pipeline needs new topics.') +
         (targeted.length
-          ? ` Target date(s) set but not yet approved: ${targeted
+          ? ` Target date(s) set but not yet scheduled: ${targeted
               .map((t) => `${t.slug} (${t.target_date})`)
               .join(', ')}.`
           : '')
@@ -572,7 +569,6 @@ function renderIdeasDoc(topics) {
       : '_None._';
 
   const ideas = byStatus('idea');
-  const approved = byStatus('approved');
   const declined = byStatus('declined');
   const inFlight = topics.filter((t) => ['scheduled', 'published'].includes(t.status));
 
@@ -584,7 +580,7 @@ function renderIdeasDoc(topics) {
 # Blog topic ideas
 
 Every topic proposed for the blog. **Nothing here is on the public site** until
-leadership approves it and it gets a date — see [CLAUDE.md](CLAUDE.md) for how a
+it gets a date — see [CLAUDE.md](CLAUDE.md) for how a
 topic moves through the pipeline.
 
 To suggest a topic: open an issue with the **Blog topic proposal** template, or add
@@ -592,19 +588,13 @@ a file to \`content/topics/\` with \`status: idea\`.
 
 | | Count |
 |---|---|
-| Awaiting review (\`idea\`) | **${ideas.length}** |
-| Approved, needs a date (\`approved\`) | **${approved.length}** |
+| Ideas, not yet dated (\`idea\`) | **${ideas.length}** |
 | Scheduled or published | **${inFlight.length}** |
 | Declined | **${declined.length}** |
 
-## Approved — waiting for a date
+## Ideas
 
-Leadership has said yes. These need an author and a \`publish_date\` to move onto
-the [calendar](CALENDAR.md).
-
-${table(approved)}
-
-## Awaiting leadership review
+These need an author and a \`publish_date\` to move onto the [calendar](CALENDAR.md).
 
 ${
   byTag.size
@@ -632,7 +622,6 @@ function renderCalendarDoc(topics) {
   const published = topics
     .filter((t) => t.status === 'published')
     .sort((a, b) => (b.publish_date || '').localeCompare(a.publish_date || ''));
-  const approved = topics.filter((t) => t.status === 'approved');
   const targeted = topics
     .filter((t) => t.target_date && !['scheduled', 'published', 'declined'].includes(t.status))
     .sort((a, b) => a.target_date.localeCompare(b.target_date));
@@ -658,13 +647,13 @@ function renderCalendarDoc(topics) {
 Target cadence: **one post every two weeks.** More is better.
 
 Only \`scheduled\` and \`published\` topics appear here. Scheduled posts show on the
-public site as "Coming soon"; ideas under review do not appear anywhere public.
+public site as "Coming soon"; undated ideas do not appear anywhere public.
 
 ## Target dates
 
 Dates the team is aiming for. A \`target_date\` is **not** a commitment and does
-not put a post on the public site — the topic still needs leadership approval,
-then a \`publish_date\`, to become \`scheduled\`.
+not put a post on the public site — the topic still needs a \`publish_date\` to
+become \`scheduled\`.
 
 ${
   targeted.length
@@ -672,9 +661,7 @@ ${
         .concat(
           targeted.map(
             (t) =>
-              `| \`${t.target_date}\` | [${t.title}](content/topics/${t.slug}.md) | ${t.status} | ${
-                t.status === 'idea' ? 'needs leadership approval' : 'needs a `publish_date`'
-              } |`
+              `| \`${t.target_date}\` | [${t.title}](content/topics/${t.slug}.md) | ${t.status} | needs a \`publish_date\` |`
           )
         )
         .join('\n')
@@ -684,16 +671,6 @@ ${
 ## Scheduled
 
 ${rows(scheduled)}
-
-## Approved, not yet dated
-
-${
-  approved.length
-    ? approved
-        .map((t) => `- [${t.title}](content/topics/${t.slug}.md) — approved`)
-        .join('\n')
-    : '_None._'
-}
 
 ## Published
 

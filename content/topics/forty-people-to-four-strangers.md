@@ -6,8 +6,6 @@ proposed_by: Sarah Miller
 proposed_on: 2026-09-22
 authors:
 publish_date:
-approved_by:
-approved_on:
 proposer_note: "Sarah Miller, 2026-09-22: proposed as a deep-dive case study with the SMA team. Notable because it is a team outside ours finding value in DAM for coding agents — the SMA team's own account is that DAM was instrumental in the transfer. Needs interviews with the four to be written."
 ---
 

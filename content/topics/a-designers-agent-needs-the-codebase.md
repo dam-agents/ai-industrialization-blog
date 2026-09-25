@@ -1,13 +1,11 @@
 ---
 title: "A designer's agent needs the codebase, not a style guide"
 tag: Design
-status: approved
+status: idea
 proposed_by: "Jamie Jabbour"
 proposed_on: 2026-08-21
 authors: "Jamie Jabbour"
 publish_date:
-approved_by: Darrell Reimer
-approved_on: 2026-08-21
 sequencing_note: "Darrell Reimer, 2026-08-21: schedule experience pieces like this only after the team-introduction and setup posts have run. Do not give this a publish_date until those are dated first."
 ---
 

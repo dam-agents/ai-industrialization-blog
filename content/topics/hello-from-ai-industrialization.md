@@ -6,8 +6,6 @@ proposed_by: Jenna Winkler
 proposed_on: 2026-08-18
 authors: "AI Platform Incubation Team"
 publish_date: 2026-09-21
-approved_by: Darrell Reimer
-approved_on: 2026-09-21
 draft_url: "https://ibm.ent.box.com/notes/2448439475984"
 ---
 

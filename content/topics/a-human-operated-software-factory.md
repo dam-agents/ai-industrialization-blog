@@ -6,8 +6,6 @@ proposed_by: Matous Havlena
 proposed_on: 2026-08-28
 authors:
 publish_date:
-approved_by:
-approved_on:
 source_note: "content/notes/2026-08-28-software-factory-one-pager-assignment.md — the assignment brief and the team's current opinions from the 2026-08-28 software factory direction discussion, supplied by the proposer with this idea."
 upstream_dependency: "Matous Havlena, 2026-08-28: work in progress. A one-pager is being written with Radek Jezek and Tomas Weiss and would be the starting point for this post; it goes to team review and then to an external stakeholder before it is settled. The post should not be drafted from the brief alone — wait for the agreed one-pager, and note that its positions may change in review."
 ---

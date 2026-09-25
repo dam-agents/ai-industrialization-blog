@@ -2,7 +2,7 @@
 
 The public blog for the AI Industrialization team at IBM Research.
 
-This repo contains the site and the workflow for taking topics from idea → approved → scheduled → published.
+This repo contains the site and the workflow for taking topics from idea → scheduled → published.
 
 | | |
 |---|---|
@@ -16,12 +16,11 @@ Open an issue with the **Blog topic proposal** template, or add a file to `conte
 ## Publishing workflow
 
 ```text
-idea ──────► approved ──────► scheduled ──────► published
+idea ──────► scheduled ──────► published
 ```
 
 - **`idea`** — proposed topic
-- **`approved`** — selected for development
-- **`scheduled`** — has an author, draft, and publish date
+- **`scheduled`** — has an author and a publish date
 - **`published`** — live on the site
 - **`declined`** — won't be published
 

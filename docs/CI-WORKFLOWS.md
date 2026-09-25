@@ -83,7 +83,7 @@ jobs:
 ## 3. `.github/workflows/validate.yml`
 
 Validates the topic pipeline on every PR — catches a scheduled topic with no
-date, an unattributed approval, colliding publish dates, or stale generated docs
+date, colliding publish dates, or stale generated docs
 before they merge.
 
 ```yaml

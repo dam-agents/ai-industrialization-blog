@@ -5,13 +5,13 @@
 Target cadence: **one post every two weeks.** More is better.
 
 Only `scheduled` and `published` topics appear here. Scheduled posts show on the
-public site as "Coming soon"; ideas under review do not appear anywhere public.
+public site as "Coming soon"; undated ideas do not appear anywhere public.
 
 ## Target dates
 
 Dates the team is aiming for. A `target_date` is **not** a commitment and does
-not put a post on the public site — the topic still needs leadership approval,
-then a `publish_date`, to become `scheduled`.
+not put a post on the public site — the topic still needs a `publish_date` to
+become `scheduled`.
 
 _None._
 
@@ -20,10 +20,7 @@ _None._
 | Date | Topic | Authors | Status |
 |---|---|---|---|
 | `2026-09-30` | [Agents as Teammates: Sharing Workspaces and Context](content/topics/agents-as-teammates.md) | Sarah Miller, Jenna Winkler, Matous Havlena | scheduled |
-
-## Approved, not yet dated
-
-- [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) — approved
+| `2026-10-14` | [The team brain](content/topics/the-team-brain.md) | _unassigned_ | scheduled |
 
 ## Published
 
