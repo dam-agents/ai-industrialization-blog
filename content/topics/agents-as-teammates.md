@@ -1,10 +1,10 @@
 ---
-title: "Agents as Teammates: Sharing Workspaces and Context"
+title: "Agents as Teammates"
 tag: Agent infrastructure
-status: scheduled
+status: published
 proposed_by: Jenna Winkler
 proposed_on: 2026-08-18
-authors: "Sarah Miller, Jenna Winkler, Matous Havlena"
+authors: "Samantha Dempsey, Matous Havlena, Sarah Miller, Jenna Winkler"
 publish_date: 2026-09-30
 ---
 
