@@ -2,6 +2,7 @@
 lede: "What happened when our team moved its AI agents off our individual laptops and into Slack."
 sections: Solving lost context | Humans and agents in Slack | Benefits | Evidence from a field experiment | Tips to build your own | Get started
 read_time: 4 min read
+draft_url: "https://ibm.ent.box.com/notes/2493462551765"
 ---
 
 We’ve all had the frustrating experience of being in the zone and then feeling like we’ve broken our stride when we need to use an AI tool. We need to open a new window, explain to the AI why and how we’re doing this task, and eventually paste what we’ve made back into the tool where our teammates are working and explain what we’ve done. These bumpy connections between our tools, other humans, and AI interfaces force us to change our ways of working to loop in AI. What if there was a way to bring AI into the tools and collaboration spaces where we’re already working with each other?
