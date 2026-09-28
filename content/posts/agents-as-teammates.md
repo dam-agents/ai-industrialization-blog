@@ -19,7 +19,7 @@ Our AI Industrialization team brought custom agents into our Slack channels usin
 
 To illustrate what this looks like in practice, we’d like to introduce DAMitha, our team’s custom design agent that we interact with in Slack. This is what a typical experience with DAMitha looks like: Our designer uncovers a UI issue and posts about it in our design Slack channel. One of our developers responds with information about the technical underpinnings of that issue, and a PM chimes in with an idea for how to fix it. The designer (or anyone in the channel) types "@DAMitha write an issue for this", prompting DAMitha to read the thread, check GitHub for related issues, and file an issue translating all this rich context into concise text following our team’s format.
 
-No context is lost between tools, no human focus is disrupted, and there’s no need to explain to the agent what’s going on before it takes work off our plates. DAMitha is one of X agent teammates our team has built to support specific tasks, and we’re tagging agents like DAMitha into our conversations about X times per day.
+No context is lost between tools, no human focus is disrupted, and there’s no need to explain to the agent what’s going on before it takes work off our plates. DAMitha is one of several agent teammates our team has built to support specific tasks, and tagging them into our conversations has become a routine part of the day.
 
 ## 03 — Benefits of agent teammates
 
