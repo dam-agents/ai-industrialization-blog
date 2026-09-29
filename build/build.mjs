@@ -5,7 +5,7 @@
 //   node build/build.mjs          generate site/, IDEAS.md, CALENDAR.md
 //   node build/build.mjs --check  validate only, write nothing
 
-import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, cpSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -154,7 +154,7 @@ const esc = (s) =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-/** Tiny markdown subset: ##/### headings, > quotes, lists, paragraphs, inline marks. */
+/** Tiny markdown subset: ##/### headings, > quotes, lists, figures, paragraphs, inline marks. */
 function markdown(src) {
   const inline = (s) =>
     esc(s)
@@ -170,7 +170,15 @@ function markdown(src) {
     let m;
     if ((m = /^###\s+(.*)$/s.exec(b))) out.push(`<h3 class="post-h3">${inline(m[1])}</h3>`);
     else if ((m = /^##\s+(.*)$/s.exec(b))) out.push(`<h2 class="post-h2">${inline(m[1])}</h2>`);
-    else if (b.startsWith('> ')) {
+    else if ((m = /^!\[([^\]]*)\]\(([^)]+)\)\s*(.*)$/s.exec(b))) {
+      // ![alt](images/file.png) — any lines after it become the caption.
+      const caption = m[3].trim().replace(/\n/g, ' ');
+      out.push(
+        `<figure class="post-figure"><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy">${
+          caption ? `<figcaption>${inline(caption)}</figcaption>` : ''
+        }</figure>`
+      );
+    } else if (b.startsWith('> ')) {
       const q = b.split('\n').map((l) => l.replace(/^>\s?/, '')).join(' ');
       out.push(`<blockquote class="pull"><p>${inline(q)}</p></blockquote>`);
     } else if (/^[-*]\s/.test(b)) {
@@ -726,6 +734,8 @@ writeFileSync(join(OUT, 'styles.css'), readFileSync(join(ROOT, 'build/styles.css
 writeFileSync(join(OUT, '.nojekyll'), '');
 
 const published = topics.filter((t) => t.status === 'published');
+const postImages = join(ROOT, 'content/posts/images');
+if (existsSync(postImages)) cpSync(postImages, join(OUT, 'posts', 'images'), { recursive: true });
 for (const t of published) {
   writeFileSync(join(OUT, 'posts', `${t.slug}.html`), renderPost(site, t, topics));
 }

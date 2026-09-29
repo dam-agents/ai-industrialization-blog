@@ -17,12 +17,11 @@ _None._
 
 ## Scheduled
 
-| Date | Topic | Authors | Status |
-|---|---|---|---|
-| `2026-09-30` | [Agents as Teammates: Sharing Workspaces and Context](content/topics/agents-as-teammates.md) | Sarah Miller, Jenna Winkler, Matous Havlena | scheduled |
+_None._
 
 ## Published
 
 | Date | Topic | Authors | Status |
 |---|---|---|---|
+| `2026-09-30` | [Agents as Teammates](content/topics/agents-as-teammates.md) | Samantha Dempsey, Matous Havlena, Sarah Miller, Jenna Winkler | published |
 | `2026-09-21` | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | AI Platform Incubation Team | published |

@@ -55,7 +55,7 @@ an empty calendar. Only `publish_date` schedules a post.
 First post: **Hello from AI Industrialization — published Mon 2026-09-21**.
 
 Cadence (set 2026-09-25): **a new post every other Wednesday**, starting Wed
-2026-09-30 ("Agents as Teammates: Sharing Workspaces and Context"). Slots after
+2026-09-30 ("Agents as Teammates"). Slots after
 that: 2026-10-14, 10-28, 11-11, 11-25, and every 14 days on.
 
 Keep declined topics — the reasoning is
