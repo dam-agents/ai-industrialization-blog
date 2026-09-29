@@ -553,7 +553,7 @@ function renderPost(site, topic, topics) {
       </div>
 
       <aside class="post-related">
-        <span class="mono-label dim">Related</span>
+        <span class="mono-label dim">Other posts</span>
         ${related
           .map(
             (t) =>
