@@ -8,10 +8,13 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, cpSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'site');
 const CHECK_ONLY = process.argv.includes('--check');
+// Cache-buster for the stylesheet link, so a CSS change shows up without a hard refresh.
+const CSS_VERSION = createHash('sha1').update(readFileSync(join(ROOT, 'build/styles.css'))).digest('hex').slice(0, 8);
 
 const STATUSES = ['idea', 'scheduled', 'published', 'declined'];
 const CADENCE_WINDOW_DAYS = 28;
@@ -222,7 +225,7 @@ function shell({ site, title, description, body, nav, relative = '' }) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${base}styles.css">
+<link rel="stylesheet" href="${base}styles.css?v=${CSS_VERSION}">
 </head>
 <body>
 <header class="site-header">
