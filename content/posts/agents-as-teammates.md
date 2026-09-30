@@ -21,6 +21,8 @@ To illustrate what this looks like in practice, we’d like to introduce DAMitha
 
 No context is lost between tools, no human focus is disrupted, and there’s no need to explain to the agent what’s going on before it takes work off our plates. DAMitha is one of several agent teammates our team has built to support specific tasks, and tagging them into our conversations has become a routine part of the day.
 
+"One of the biggest unlocks for us was the integration with Slack. Being able to treat agents like you do other people. Invite them to the channel, tag them in when they're relevant, or even have them listen in on our conversation," says Jenna Winkler.
+
 ## 03 — Benefits of agent teammates
 
 We’ve seen three key benefits from agent teammates like DAMitha:
