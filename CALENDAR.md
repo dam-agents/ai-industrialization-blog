@@ -17,7 +17,9 @@ _None._
 
 ## Scheduled
 
-_None._
+| Date | Topic | Authors | Status |
+|---|---|---|---|
+| `2026-10-14` | [How Research Moves From Assisted to Autonomous](content/topics/how-research-moves-from-assisted-to-autonomous.md) | Tomas Weiss, Samantha Dempsey | scheduled |
 
 ## Published
 
