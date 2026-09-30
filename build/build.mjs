@@ -171,7 +171,9 @@ function markdown(src) {
     const b = block.trim();
     if (!b) continue;
     let m;
-    if ((m = /^###\s+(.*)$/s.exec(b))) out.push(`<h3 class="post-h3">${inline(m[1])}</h3>`);
+    // A block that begins with an HTML tag is passed through verbatim (e.g. figures).
+    if (/^<[a-zA-Z]/.test(b)) out.push(b);
+    else if ((m = /^###\s+(.*)$/s.exec(b))) out.push(`<h3 class="post-h3">${inline(m[1])}</h3>`);
     else if ((m = /^##\s+(.*)$/s.exec(b))) out.push(`<h2 class="post-h2">${inline(m[1])}</h2>`);
     else if ((m = /^!\[([^\]]*)\]\(([^)]+)\)\s*(.*)$/s.exec(b))) {
       // ![alt](images/file.png) — any lines after it become the caption.
@@ -182,11 +184,40 @@ function markdown(src) {
         }</figure>`
       );
     } else if (b.startsWith('> ')) {
-      const q = b.split('\n').map((l) => l.replace(/^>\s?/, '')).join(' ');
-      out.push(`<blockquote class="pull"><p>${inline(q)}</p></blockquote>`);
+      const lines = b.split('\n').map((l) => l.replace(/^>\s?/, ''));
+      // A trailing "— Name" line becomes the attribution.
+      let cite = '';
+      if (/^(—|--)\s*\S/.test(lines[lines.length - 1])) {
+        cite = lines.pop().replace(/^(—|--)\s*/, '');
+      }
+      const q = lines.join(' ');
+      out.push(
+        `<blockquote class="pull"><p>${inline(q)}</p>${
+          cite ? `<cite class="pull-cite">${inline(cite)}</cite>` : ''
+        }</blockquote>`
+      );
     } else if (/^[-*]\s/.test(b)) {
-      const items = b.split('\n').map((l) => `<li>${inline(l.replace(/^[-*]\s+/, ''))}</li>`).join('');
-      out.push(`<ul class="post-list">${items}</ul>`);
+      const lines = b.split('\n');
+      // A list where every item is "action :: command" renders as numbered steps.
+      if (lines.every((l) => l.includes(' :: '))) {
+        const steps = lines
+          .map((l) => l.replace(/^[-*]\s+/, '').split(' :: '))
+          .map(
+            ([action, cmd], i) =>
+              `<li class="post-step"><span class="post-step-n">${i + 1}</span>` +
+              `<div><p class="post-step-do">${inline(action.trim())}</p>` +
+              `<code class="post-step-cmd">${esc(cmd.trim())}</code></div></li>`
+          )
+          .join('');
+        out.push(`<ol class="post-steps">${steps}</ol>`);
+      } else {
+        const items = lines.map((l) => `<li>${inline(l.replace(/^[-*]\s+/, ''))}</li>`).join('');
+        out.push(`<ul class="post-list">${items}</ul>`);
+      }
+    } else if (/^\*[^*]+\*$/.test(b.replace(/\n/g, ' ').trim())) {
+      // A standalone all-italic paragraph is a colophon / editorial note.
+      const text = b.replace(/\n/g, ' ').trim().replace(/^\*|\*$/g, '');
+      out.push(`<p class="post-colophon">${inline(text)}</p>`);
     } else {
       out.push(`<p class="post-p">${inline(b.replace(/\n/g, ' '))}</p>`);
     }
@@ -559,7 +590,9 @@ function renderPost(site, topic, topics) {
             (t) =>
               `<a class="related-item" href="${
                 t.status === 'published' ? `${esc(t.slug)}.html` : '../calendar.html'
-              }"><span class="mono related-tag">${esc(t.tag)}</span><span class="related-title">${esc(t.title)}</span></a>`
+              }"><span class="related-tags"><span class="mono related-tag">${esc(t.tag)}</span>${
+                t.status === 'scheduled' ? '<span class="mono related-soon">Coming soon</span>' : ''
+              }</span><span class="related-title">${esc(t.title)}</span></a>`
           )
           .join('\n        ')}
       </aside>

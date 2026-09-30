@@ -489,7 +489,7 @@ a { color: var(--blue); }
   color: var(--ink);
 }
 .post-h2 {
-  margin-top: 56px;
+  margin-top: 64px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 15px;
   letter-spacing: 0.12em;
@@ -500,7 +500,45 @@ a { color: var(--blue); }
 .post-h2 + .post-p { margin-top: 20px; }
 .post-h3 { margin-top: 40px; font-size: 24px; font-weight: 400; letter-spacing: -0.014em; }
 .pull { margin-top: 44px; padding: 32px 36px; background: var(--bg-alt); border-left: 2px solid var(--blue); }
-.pull p { font-size: 24px; line-height: 1.45; font-weight: 300; letter-spacing: -0.014em; text-wrap: pretty; }
+.pull p { font-size: 24px; line-height: 1.45; font-weight: 300; letter-spacing: -0.014em; text-wrap: pretty; margin: 0; }
+.pull-cite {
+  display: block;
+  margin-top: 20px;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.post-colophon {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+.post-steps { list-style: none; margin: 28px 0 0; padding: 0; counter-reset: none; }
+.post-step { display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); }
+.post-step:last-child { border-bottom: 1px solid var(--line); }
+.post-step-n {
+  flex: none;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--blue);
+  line-height: 28px;
+  min-width: 18px;
+}
+.post-step-do { margin: 0 0 8px; font-size: 18px; line-height: 1.5; font-weight: 500; }
+.post-step-cmd {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 14px;
+  color: var(--ink-2);
+  background: var(--bg-alt);
+  padding: 6px 10px;
+}
 .post-list { margin-top: 24px; padding-left: 22px; }
 .post-list li { font-size: 18px; line-height: 1.7; color: var(--ink-2); margin-top: 10px; }
 .post-figure { margin-top: 40px; }
@@ -547,7 +585,18 @@ a { color: var(--blue); }
   padding-top: 14px;
 }
 .related-item:hover { color: var(--blue); }
+.related-tags { display: flex; align-items: center; gap: 8px; }
 .related-tag { font-size: 11px; color: var(--gray); }
+.related-soon {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: var(--bg-alt);
+  border: 1px solid var(--blue-light);
+  border-radius: 2px;
+  padding: 1px 6px;
+}
 .related-title { font-size: 15px; line-height: 1.35; }
 
 /* --- footer --- */
@@ -581,6 +630,21 @@ a { color: var(--blue); }
 
 @media (max-width: 640px) {
   .wrap { padding: 0 20px; }
+  /* Stack brand over nav so the three links don't wrap into the logo. */
+  .header-inner {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .site-nav {
+    margin-left: 0;
+    gap: 20px 24px;
+    width: 100%;
+  }
+  .site-nav a { font-size: 14px; }
   .hero { padding: 56px 20px 56px; }
   .hero-h1 { font-size: 34px; }
   .hero-lede { font-size: 18px; }
@@ -594,4 +658,231 @@ a { color: var(--blue); }
   .cal-h1 { font-size: 32px; }
   .cap-row { grid-template-columns: 1fr; gap: 14px; }
   .post-meta { gap: 24px; }
+}
+
+
+/* ── Post diagrams (figures ported from design export) ── */
+/* ============================================================
+   Post figures — diagram figures for "Agents as Teammates".
+   Class-based port of the design-tool export. Light-only.
+   Reuses :root vars from styles.css; figure-specific chrome
+   colors that have no matching var are kept as literals.
+   ============================================================ */
+
+/* --- Fig. 1 — fig-needs: what an agent teammate needs + DAM wiring --- */
+
+.fig-needs .fn-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.fig-needs .fn-cell {
+  background: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.fig-needs .fn-key {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--blue);
+}
+.fig-needs .fn-lead {
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.fig-needs .fn-notes {
+  margin-top: auto;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.fig-needs .fn-note { display: flex; gap: 8px; align-items: center; }
+.fig-needs .fn-dot { flex: none; width: 6px; height: 6px; background: var(--blue); }
+
+.fig-needs .fn-wire {
+  background: var(--ink);
+  color: var(--bg-alt);
+  padding: 20px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 8px;
+  font-size: 14px;
+}
+.fig-needs .fn-wire-label {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--gray-2);
+  width: 100%;
+}
+.fig-needs .fn-flow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 8px;
+}
+.fig-needs .fn-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.fig-needs .fn-node {
+  border: 1px solid var(--ink-3);
+  padding: 8px 12px;
+}
+.fig-needs .fn-node-active { background: var(--blue); border-color: var(--blue); }
+.fig-needs .fn-step {
+  display: block;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--blue-light);
+}
+.fig-needs .fn-step-active { color: #d0e2ff; }
+.fig-needs .fn-sub { display: block; font-size: 12px; color: var(--faint); }
+.fig-needs .fn-sub-active { color: #d0e2ff; }
+
+@media (max-width: 640px) {
+  .fig-needs .fn-pair { grid-template-columns: 1fr; }
+}
+
+/* --- Fig. 2 — fig-thread: Slack thread becomes a structured issue --- */
+
+.fig-thread .ft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.fig-thread .ft-panel { background: #fff; display: flex; flex-direction: column; }
+.fig-thread .ft-head {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.fig-thread .ft-head-name { font-weight: 600; }
+.fig-thread .ft-head-meta {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--gray);
+}
+.fig-thread .ft-head-open {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: #198038;
+}
+.fig-thread .ft-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.fig-thread .ft-msg { display: flex; gap: 12px; }
+.fig-thread .ft-avatar {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.fig-thread .ft-av-ds { background: #e8daff; color: #491d8b; }
+.fig-thread .ft-av-dv { background: #d9fbfb; color: #004144; }
+.fig-thread .ft-av-pm { background: #fff1f1; color: #750e13; }
+.fig-thread .ft-av-agent { background: var(--blue); color: #fff; }
+.fig-thread .ft-who { font-weight: 600; }
+.fig-thread .ft-time { font-weight: 400; color: var(--gray); font-size: 12px; }
+.fig-thread .ft-mention { background: #d0e2ff; color: var(--blue-hover); padding: 0 3px; }
+.fig-thread .ft-msg-agent {
+  background: var(--bg-alt);
+  margin: 0 -20px;
+  padding: 14px 20px;
+  box-shadow: inset 3px 0 0 var(--blue);
+}
+.fig-thread .ft-agent-body { min-width: 0; }
+.fig-thread .ft-tag {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 0 4px;
+  margin-left: 4px;
+}
+.fig-thread .ft-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 6px 0;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.fig-thread .ft-issue { gap: 16px; }
+.fig-thread .ft-issue-title { font-size: 18px; font-weight: 600; line-height: 1.3; }
+.fig-thread .ft-labels { display: flex; flex-wrap: wrap; gap: 6px; font-size: 12px; }
+.fig-thread .ft-label { background: var(--line); padding: 2px 8px; }
+.fig-thread .ft-field {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+.fig-thread .ft-issue-foot {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--gray);
+}
+
+@media (max-width: 640px) {
+  .fig-thread .ft-grid { grid-template-columns: 1fr; }
+}
+
+/* --- Fig. 3 — fig-skills: skills turn expertise into shared capability --- */
+
+.fig-skills .fs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  align-items: stretch;
+}
+.fig-skills .fs-cell {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fig-skills .fs-cell-expert { background: var(--bg-alt); }
+.fig-skills .fs-cell-skill { background: var(--blue); color: #fff; }
+.fig-skills .fs-cell-team { background: #fff; }
+.fig-skills .fs-key {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--gray);
+}
+.fig-skills .fs-key-skill { color: #d0e2ff; }
+.fig-skills .fs-item { font-size: 16px; color: var(--ink); }
+.fig-skills .fs-mono {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 15px;
 }
