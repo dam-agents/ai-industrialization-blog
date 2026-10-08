@@ -4,7 +4,7 @@ tag: Agent infrastructure
 status: idea
 proposed_by: Matous Havlena
 proposed_on: 2026-10-08
-authors: "Jan P."
+authors: "Jan Pokorny"
 publish_date:
 ---
 
