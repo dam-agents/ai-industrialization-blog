@@ -4,7 +4,7 @@ tag: Insight
 status: idea
 proposed_by: Jenna Winkler
 proposed_on: 2026-08-18
-authors:
+authors: "Jenna Winkler, Tomas Weiss"
 publish_date:
 ---
 

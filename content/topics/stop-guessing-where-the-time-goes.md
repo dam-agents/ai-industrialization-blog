@@ -4,7 +4,7 @@ tag: Observability
 status: idea
 proposed_by: Matous Havlena
 proposed_on: 2026-08-28
-authors:
+authors: "Matous Havlena"
 publish_date:
 source_note: "content/notes/2026-08-28-agent-driven-performance-key-takeaways.md — key takeaways from the 2026-08-28 AI Fridays session, supplied by the proposer with this idea."
 proposer_offer: "Matous Havlena, 2026-08-28: offered a session with the buginator agent for whoever writes this. Buginator itself is not a DAM feature yet — hoped for, not shipped."

@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **6** |
+| Ideas, not yet dated (`idea`) | **8** |
 | Scheduled or published | **3** |
 | Declined | **0** |
 
@@ -19,16 +19,18 @@ a file to `content/topics/` with `status: idea`.
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Insight (3) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Insight (4) · Agent infrastructure (1) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
 | [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) | Design | Jamie Jabbour | Jamie Jabbour | — |
-| [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | _unassigned_ | — |
+| [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | Matous Havlena, Radek Jezek | — |
 | [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
-| [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | _unassigned_ | — |
-| [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | _unassigned_ | — |
-| [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | _unassigned_ | — |
+| [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | Petr B. | — |
+| [Secure AI agents in enterprise](content/topics/secure-ai-agents-in-enterprise.md) | Agent infrastructure | Matous Havlena | Jan P. | — |
+| [Sovereign AI](content/topics/sovereign-ai.md) | Insight | Matous Havlena | Matous Havlena | — |
+| [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | Matous Havlena | — |
+| [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | Jenna Winkler, Tomas Weiss | — |
 
 ## Declined
 
