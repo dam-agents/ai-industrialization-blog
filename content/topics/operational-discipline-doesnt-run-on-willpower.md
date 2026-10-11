@@ -6,6 +6,7 @@ proposed_by: Matous Havlena
 proposed_on: 2026-08-28
 authors: "Petr Bulanek"
 publish_date:
+scope_note: "Jenna Winkler, 2026-10-11: logged as 'Productivity — processes, transcripts, action items' — include meeting transcripts and action items alongside issues and epics."
 related_note: "Sibling to 'Stop guessing where the time goes' — same argument (agents are good at reading more than a human will) applied to how the team works rather than how the software runs."
 ---
 

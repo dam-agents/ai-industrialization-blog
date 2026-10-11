@@ -1,5 +1,5 @@
 ---
-title: "Sovereign AI"
+title: "Sovereign AI: why you need a platform"
 tag: Insight
 status: idea
 proposed_by: Matous Havlena
@@ -8,4 +8,4 @@ authors: "Matous Havlena"
 publish_date:
 ---
 
-Sovereign AI — scope to be defined by the author.
+Sovereign AI, and why getting it means running your own platform. Scope to be defined by the author.
