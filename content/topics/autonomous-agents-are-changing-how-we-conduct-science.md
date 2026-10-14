@@ -1,6 +1,6 @@
 ---
 title: "Autonomous agents are changing how we conduct science"
-tag: Insight
+tag: Autonomous experimentation
 status: published
 proposed_by: Jenna Winkler
 proposed_on: 2026-09-30
