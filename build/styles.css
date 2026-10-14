@@ -910,3 +910,370 @@ a { color: var(--blue); }
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 15px;
 }
+
+/* ============================================================
+   Post figures — diagram figures for "Autonomous agents are
+   changing how we conduct science". Same grid-and-strip
+   language as the Agents as Teammates figures above.
+   ============================================================ */
+
+/* --- fig-loop: the design-build-test-learn cycle --- */
+
+.fig-loop .fl-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+/* Each step draws its own right and bottom edge, so every divider renders at any width. */
+.fig-loop .fl-step {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.fig-loop .fl-key {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--blue);
+}
+.fig-loop .fl-name { font-size: 20px; line-height: 1.3; color: var(--ink); }
+.fig-loop .fl-desc { font-size: 14px; line-height: 1.5; color: var(--ink-3); }
+.fig-loop .fl-return {
+  background: var(--ink);
+  color: var(--bg-alt);
+  padding: 16px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  font-size: 14px;
+}
+.fig-loop .fl-return-label {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--blue-light);
+}
+
+/* Screen-reader-only text (used where an SVG carries the visible label). */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* --- fig-night: an example overnight run, as a horizontal two-lane timeline.
+   Time runs left to right on the axis. Researcher actions sit above it,
+   agent actions below. Slack exchanges are message cards; the agent
+   working alone is a dashed log. --- */
+
+.fig-night .tl-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+.fig-night .tl-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto 36px auto;
+  column-gap: 8px;
+  padding-top: 14px;
+}
+/* Each card starts at its own tick. Lanes never share a row, so cards can be wide. */
+.fig-night .tl-r1 { grid-column: 1 / 4; }
+.fig-night .tl-away { grid-column: 4 / 6; }
+.fig-night .tl-r2 { grid-column: 6 / 9; }
+.fig-night .tl-solo { grid-column: 2 / 5; }
+.fig-night .tl-slack-a { grid-column: 5 / 8; }
+.fig-night .tl-slack-r { grid-row: 1; align-self: stretch; }
+.fig-night .tl-solo, .fig-night .tl-slack-a { grid-row: 3; align-self: stretch; }
+/* A stem from each card to the axis: a crisp-edged SVG, so every stem renders at
+   the same width wherever the card lands on the pixel grid. */
+.fig-night .tl-slack-r, .fig-night .tl-solo, .fig-night .tl-slack-a { position: relative; }
+.fig-night .tl-stem { position: absolute; left: 12px; display: block; }
+.fig-night .tl-stem-down { bottom: -19px; }
+.fig-night .tl-stem-up { top: -19px; }
+.fig-night p { margin: 0; }
+.fig-night .tl-when { display: none; }
+
+/* The axis: one line across, a label at each card's stem, the overnight span in blue. */
+.fig-night .tl-axis {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: subgrid;
+  position: relative;
+  align-items: center;
+}
+.fig-night .tl-axis::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+  background: var(--line-2);
+}
+.fig-night .tl-tick {
+  position: relative;
+  justify-self: start;
+  margin-left: 18px;
+  padding: 0 6px;
+  background: #fff;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.fig-night .tl-axis .tl-c1 { grid-column: 1; }
+.fig-night .tl-axis .tl-c2 { grid-column: 2 / 5; }
+.fig-night .tl-axis .tl-c3 { grid-column: 5; }
+.fig-night .tl-axis .tl-c4 { grid-column: 6; }
+.fig-night .tl-tick-span {
+  justify-self: stretch;
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  background: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fig-night .tl-tick-lbl { padding: 0 6px; background: #fff; color: var(--blue-hover); }
+
+.fig-night .tl-who {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.fig-night .tl-mark { flex: none; width: 8px; height: 8px; }
+.fig-night .tl-mark-r { border: 1.5px solid var(--ink); }
+.fig-night .tl-mark-a { background: var(--blue); border-radius: 50%; }
+
+/* Agent working alone: a dashed, log-style block. */
+.fig-night .tl-solo {
+  padding: 10px 12px;
+  border: 1.5px dashed var(--blue);
+}
+.fig-night .tl-log {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ink-2);
+}
+.fig-night .tl-log li { display: grid; grid-template-columns: 42px 1fr; align-items: baseline; }
+.fig-night .tl-log-t { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: var(--gray); }
+.fig-night .tl-log-best { color: var(--blue-hover); font-weight: 600; }
+.fig-night .tl-away {
+  justify-self: center;
+  padding-bottom: 6px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--gray);
+}
+
+/* Slack exchanges: message cards. */
+.fig-night .tl-slack {
+  padding: 10px 10px 10px;
+  background: #fff;
+  border: 1px solid var(--line-2);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.fig-night .tl-msg { display: flex; gap: 8px; }
+.fig-night .tl-av {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+.fig-night .tl-av-a { background: var(--blue); color: #fff; }
+.fig-night .tl-av-r { background: #e8daff; color: #491d8b; }
+.fig-night .tl-name { font-weight: 600; }
+.fig-night .tl-mention { background: #d0e2ff; color: var(--blue-hover); padding: 0 3px; }
+.fig-night .tl-tag {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--blue-hover);
+  border: 1px solid var(--blue-hover);
+  padding: 0 3px;
+  margin-left: 2px;
+}
+
+@media (max-width: 760px) {
+  /* Too narrow for four columns: one column in time order, each card shows its time. */
+  .fig-night .tl-grid { display: flex; flex-direction: column; gap: 10px; }
+  .fig-night .tl-axis, .fig-night .tl-away { display: none; }
+  .fig-night .tl-grid > * { align-self: stretch; }
+  .fig-night .tl-stem { display: none; }
+  .fig-night .tl-when {
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+}
+
+/* --- fig-team: individual loops sharing one knowledge base and channel --- */
+
+.fig-team .ftm-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+.fig-team .ftm-loops {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding-top: 20px;
+}
+.fig-team .ftm-loop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.fig-team .ftm-ring { display: block; width: min(132px, 100%); height: auto; }
+.fig-team .ftm-loop-name { font-size: 14px; color: var(--ink); }
+/* Stems from each loop to the bus, drawn in one SVG with crisp edges so all three
+   render at the same width as the bus. */
+.fig-team .ftm-stems { display: block; width: 100%; height: 16px; margin-top: 6px; }
+.fig-team .ftm-bus {
+  height: 2px;
+  background: var(--ink-3);
+  margin: 0 calc(100% / 6);
+}
+.fig-team .ftm-dests {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.fig-team .ftm-dest { display: flex; flex-direction: column; }
+.fig-team .ftm-io {
+  flex: 1;
+  min-height: 112px;
+  display: grid;
+  grid-template-columns: 1fr 36px 1fr;
+  gap: 10px;
+}
+.fig-team .ftm-io p { margin: 16px 0; font-size: 13px; line-height: 1.45; color: var(--ink-2); align-self: start; }
+.fig-team .ftm-in { text-align: right; }
+/* Two arrows that stretch from the bus down to the shared place: in, and back out. */
+.fig-team .ftm-arrows { display: flex; justify-content: center; gap: 12px; align-self: stretch; }
+.fig-team .ftm-a { position: relative; width: 2px; }
+/* The shaft is a crisp-edged SVG so all four render at 2px wherever they land. */
+.fig-team .ftm-shaft { position: absolute; left: 0; top: 0; display: block; width: 2px; height: 100%; }
+.fig-team .ftm-a::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.fig-team .ftm-a-down { margin-bottom: 2px; }
+.fig-team .ftm-a-down::after { bottom: -2px; border-top: 10px solid var(--ink-3); }
+.fig-team .ftm-a-up { margin-top: 0; }
+.fig-team .ftm-a-up::after { top: 0; border-bottom: 10px solid var(--ink-3); }
+.fig-team .ftm-io-label {
+  display: block;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  margin-bottom: 2px;
+}
+/* Knowledge base drawn as a database cylinder. */
+.fig-team .ftm-db {
+  position: relative;
+  margin-top: 14px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px 4px;
+  border: 2px solid var(--ink);
+  border-top: 0;
+  border-radius: 0 0 50% 50% / 0 0 16px 16px;
+  background: transparent;
+  text-align: center;
+}
+.fig-team .ftm-db::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: -2px;
+  right: -2px;
+  height: 28px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: transparent;
+}
+/* Channel drawn as a small chat window. */
+.fig-team .ftm-chan {
+  height: 100px;
+  overflow: hidden;
+  border: 2px solid var(--ink-3);
+  background: #fff;
+}
+.fig-team .ftm-chan-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line-2);
+}
+.fig-team .ftm-hash {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+.fig-team .ftm-chan-body { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px 12px; }
+.fig-team .ftm-line { display: flex; align-items: center; gap: 8px; }
+.fig-team .ftm-av { flex: none; width: 14px; height: 14px; }
+.fig-team .ftm-av-a { background: var(--blue); }
+.fig-team .ftm-av-r { background: var(--blue-light); }
+.fig-team .ftm-bar { height: 8px; background: var(--line); }
+.fig-team .ftm-place-name { font-size: 15px; font-weight: 600; color: var(--ink); }
+
+@media (max-width: 640px) {
+  /* Keep both places side by side under the bus; labels stack above the arrows. */
+  .fig-team .ftm-loop-name { font-size: 12px; }
+  .fig-team .ftm-dests { gap: 12px; }
+  .fig-team .ftm-bus { margin: 0 calc(100% / 6) 0 12px; }
+  .fig-team .ftm-io { grid-template-columns: 26px 1fr; column-gap: 6px; row-gap: 0; min-height: 0; }
+  .fig-team .ftm-io p { grid-column: 2; margin: 12px 0 4px; text-align: left; align-self: start; }
+  .fig-team .ftm-arrows { grid-column: 1; grid-row: 1 / span 2; gap: 8px; }
+  .fig-team .ftm-db { height: 98px; padding: 14px 8px 4px; }
+  .fig-team .ftm-chan { height: 112px; }
+  .fig-team .ftm-chan-head { padding: 6px 8px; gap: 6px; }
+  .fig-team .ftm-place-name { font-size: 14px; }
+}
