@@ -214,6 +214,9 @@ function markdown(src) {
         const items = lines.map((l) => `<li>${inline(l.replace(/^[-*]\s+/, ''))}</li>`).join('');
         out.push(`<ul class="post-list">${items}</ul>`);
       }
+    } else if (/^\d+\.\s/.test(b)) {
+      const items = b.split('\n').map((l) => `<li>${inline(l.replace(/^\d+\.\s+/, ''))}</li>`).join('');
+      out.push(`<ol class="post-list">${items}</ol>`);
     } else if (/^\*[^*]+\*$/.test(b.replace(/\n/g, ' ').trim())) {
       // A standalone all-italic paragraph is a colophon / editorial note.
       const text = b.replace(/\n/g, ' ').trim().replace(/^\*|\*$/g, '');
