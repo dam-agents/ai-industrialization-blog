@@ -17,13 +17,12 @@ _None._
 
 ## Scheduled
 
-| Date | Topic | Authors | Status |
-|---|---|---|---|
-| `2026-10-14` | [How Research Moves From Assisted to Autonomous](content/topics/how-research-moves-from-assisted-to-autonomous.md) | Tomas Weiss, Samantha Dempsey | scheduled |
+_None._
 
 ## Published
 
 | Date | Topic | Authors | Status |
 |---|---|---|---|
+| `2026-10-14` | [Autonomous agents are changing how we conduct science](content/topics/autonomous-agents-are-changing-how-we-conduct-science.md) | Tomas Weiss, Samantha Dempsey | published |
 | `2026-09-30` | [Agents as Teammates](content/topics/agents-as-teammates.md) | Samantha Dempsey, Matous Havlena, Sarah Miller, Jenna Winkler | published |
 | `2026-09-21` | [Hello from AI Industrialization](content/topics/hello-from-ai-industrialization.md) | AI Platform Incubation Team | published |
