@@ -11,20 +11,19 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **11** |
-| Scheduled or published | **3** |
+| Ideas, not yet dated (`idea`) | **10** |
+| Scheduled or published | **4** |
 | Declined | **0** |
 
 ## Ideas
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Insight (5) · Agent infrastructure (3) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Insight (4) · Agent infrastructure (3) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
 | [A designer's agent needs the codebase, not a style guide](content/topics/a-designers-agent-needs-the-codebase.md) | Design | Jamie Jabbour | Jamie Jabbour | — |
-| [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Insight | Matous Havlena | Matous Havlena, Radek Jezek | — |
 | [Making provider-side search accountable to platform policy](content/topics/accountable-provider-side-search.md) | Agent infrastructure | Jenna Winkler | Tomas Dvorak | — |
 | [Computer and browser use for autonomous development](content/topics/computer-use-for-autonomous-development.md) | Agent infrastructure | Jenna Winkler | Radek Jezek | — |
 | [Cutting agent costs](content/topics/cutting-agent-costs.md) | Insight | Jenna Winkler | _unassigned_ | — |

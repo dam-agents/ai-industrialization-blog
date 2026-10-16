@@ -17,7 +17,9 @@ _None._
 
 ## Scheduled
 
-_None._
+| Date | Topic | Authors | Status |
+|---|---|---|---|
+| `2026-10-28` | [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Radek Jezek, Samantha Dempsey | scheduled |
 
 ## Published
 
