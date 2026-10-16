@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's coming — AI Industrialization</title>
+<meta name="description" content="Scheduled and published posts from the AI Industrialization team.">
+<meta property="og:title" content="What's coming — AI Industrialization">
+<meta property="og:description" content="Scheduled and published posts from the AI Industrialization team.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=8ab8e243">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-org">IBM Research</span>
+      <span class="brand-name">AI Industrialization</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Writing</a>
+      <a href="about.html">Who we are</a>
+      <a href="calendar.html" class="current">What's coming</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="cal-hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="tick"></span><span class="mono-label dim">Publishing calendar</span></div>
+      <h1 class="cal-h1">What's coming</h1>
+      <p class="cal-lede">We aim to publish once every two weeks.</p>
+    </div>
+  </section>
+
+  <section class="cal-section">
+    <div class="wrap">
+      <h2 class="mono-label dim cal-group-head">Scheduled</h2>
+      <div class="cal-list">
+        <div class="cal-row">
+          <span class="mono cal-date">October 28, 2026</span>
+          <div class="cal-main">
+            <span class="mono-label dim">Insight</span>
+            <h3 class="cal-title">A human-operated software factory, not a dark one</h3>
+            <p class="cal-blurb">Our take on what a software factory is, what it means for the business of
+software engineering, and how someone builds one on DAM. Two halves: the vision,
+then the opportunity.
+
+The vision the team is arguing for is a **human-operated factory, not a dark
+one**. The claim is not that software development gets automated away — it is
+that the collaboration between the person and the agent gets automated, as far
+as it will go, and that the models are not good enough for anything else today.
+That makes the interesting question *where* the person belongs rather than
+whether they do. The answer the team keeps arriving at is a small set of defined
+touch points — context creation, business and architecture alignment, review and
+approval — with everything between them automated. Two kinds of alignment do
+different jobs and should not be collapsed: a technical grill with the agent
+surfaces unknown problems, a discussion with people creates agreement on
+direction.
+
+The structural argument is that a factory is a **codified process, not a group of
+agents deciding together**. Implement, review, approve, merge — fixed, which is
+what makes parallel work safe; freely coordinating agents produce race
+conditions instead. GitHub is both the channel and the state store, so the whole
+factory state lives in issues, labels, PRs and commits: stop it, start it again,
+and it continues without duplicating work, and people join in the same place the
+agents work. Agents hand off through the channel rather than to each other
+directly, because direct handover has no confirmation, no shared state and bad
+timing. Events push work to agents; agents do not wake on a timer and go looking
+for it, which mostly buys wake-ups that find nothing.
+
+The second half is where DAM comes in — which building blocks exist, which are
+missing, and what has to be added before someone can build their own factory on
+it. The framing to keep: building blocks are not the story. Start from the
+audience, then the pain, then the features, then the blocks. And the team is its
+own first customer — building our own factory on DAM is how we find out what is
+missing.
+
+The post has to take positions against the state of the art rather than describe
+it: factory.ai, the KubeStellar hive, and how Anthropic build and run their own
+factories — including that they started with free agent groups and moved away
+from them. Where those disagree with us, say so and say why.</p>
+            <span class="cal-authors">Radek Jezek, Samantha Dempsey</span>
+          </div>
+          <span class="cal-status cal-scheduled">Coming soon</span>
+        </div>
+        <div class="cal-row">
+          <span class="mono cal-date">November 11, 2026</span>
+          <div class="cal-main">
+            <span class="mono-label dim">Insight</span>
+            <h3 class="cal-title">Sovereign AI: why you need a platform</h3>
+            <p class="cal-blurb">Sovereign AI, and why getting it means running your own platform. Scope to be defined by the author.</p>
+            <span class="cal-authors">Matous Havlena</span>
+          </div>
+          <span class="cal-status cal-scheduled">Coming soon</span>
+        </div>
+        <div class="cal-row">
+          <span class="mono cal-date">November 25, 2026</span>
+          <div class="cal-main">
+            <span class="mono-label dim">Insight</span>
+            <h3 class="cal-title">Operational discipline doesn't run on willpower</h3>
+            <p class="cal-blurb">Most team inefficiency is not people working slowly. It is people working on the
+wrong thing, working from missing or wrong context, or working inside a process
+that quietly wastes their time. All three are visible in the artefacts a team
+already produces — issues, epics, plans, the trail of how work actually moved —
+and all three are exactly the kind of pattern an agent will find because it will
+read every one of them and a person will not.
+
+The worked example is the team's own work on issues, epics and planning:
+what tightening those up actually changed, and what the agent noticed that
+nobody had written down. The wider argument is that operational discipline
+normally decays because it depends on someone having the attention to enforce it
+on a busy week. An agent doesn't have busy weeks. It can keep checking that an
+epic still has a stated outcome, that an issue carries the context needed to
+start it, that the plan and the board have not silently diverged — and keep
+steering the team back rather than filing a report nobody reads.
+
+Worth taking positions on: which signals are real and which are process theatre;
+that the point is to surface the problem to the team, not to score people; and
+where this stops — an agent can say the context is missing, but it cannot decide
+what the team should care about this quarter.</p>
+            <span class="cal-authors">Petr Bulanek</span>
+          </div>
+          <span class="cal-status cal-scheduled">Coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cal-section cal-section-alt">
+    <div class="wrap">
+      <h2 class="mono-label dim cal-group-head">Published</h2>
+      <div class="cal-list">
+        <div class="cal-row">
+          <span class="mono cal-date">October 14, 2026</span>
+          <div class="cal-main">
+            <span class="mono-label dim">Autonomous experimentation</span>
+            <h3 class="cal-title"><a href="posts/autonomous-agents-are-changing-how-we-conduct-science.html">Autonomous agents are changing how we conduct science</a></h3>
+            <p class="cal-blurb">AI-native research hands the experiment loop to agents and changes the researcher’s role.</p>
+            <span class="cal-authors">Tomas Weiss, Samantha Dempsey</span>
+          </div>
+          <span class="cal-status cal-published">Published</span>
+        </div>
+        <div class="cal-row">
+          <span class="mono cal-date">September 30, 2026</span>
+          <div class="cal-main">
+            <span class="mono-label dim">Agent infrastructure</span>
+            <h3 class="cal-title"><a href="posts/agents-as-teammates.html">Agents as Teammates</a></h3>
+            <p class="cal-blurb">How our team shares workspaces and context with the agents we work with.</p>
+            <span class="cal-authors">Samantha Dempsey, Matous Havlena, Sarah Miller, Jenna Winkler</span>
+          </div>
+          <span class="cal-status cal-published">Published</span>
+        </div>
+        <div class="cal-row">
+          <span class="mono cal-date">September 21, 2026</span>
+          <div class="cal-main">
+            <span class="mono-label dim">Introductions</span>
+            <h3 class="cal-title"><a href="posts/hello-from-ai-industrialization.html">Hello from AI Industrialization</a></h3>
+            <p class="cal-blurb">Why we exist, how we work, what we're building, the questions we're still exploring — and what you can expect to read here.</p>
+            <span class="cal-authors">AI Platform Incubation Team</span>
+          </div>
+          <span class="cal-status cal-published">Published</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-col">
+      <span class="mono-label dim">IBM Research</span>
+      <span class="footer-name">AI Industrialization</span>
+      <span class="footer-blurb">IBM Research's proving ground for emerging AI.</span>
+    </div>
+    <div class="footer-col">
+      <span class="mono-label dim">Site</span>
+      <a href="index.html">Writing</a>
+      <a href="about.html">Who we are</a>
+      <a href="calendar.html">What's coming</a>
+    </div>
+    <div class="footer-col">
+      <span class="mono-label dim">Focus</span>
+      <span class="footer-item">Agent infrastructure</span>
+      <span class="footer-item">Inference at scale</span>
+      <span class="footer-item">Research validation</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
