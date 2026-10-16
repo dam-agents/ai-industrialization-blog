@@ -20,6 +20,8 @@ _None._
 | Date | Topic | Authors | Status |
 |---|---|---|---|
 | `2026-10-28` | [A human-operated software factory, not a dark one](content/topics/a-human-operated-software-factory.md) | Radek Jezek, Samantha Dempsey | scheduled |
+| `2026-11-11` | [Sovereign AI: why you need a platform](content/topics/sovereign-ai.md) | Matous Havlena | scheduled |
+| `2026-11-25` | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Petr Bulanek | scheduled |
 
 ## Published
 

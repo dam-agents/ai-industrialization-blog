@@ -11,15 +11,15 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **10** |
-| Scheduled or published | **4** |
+| Ideas, not yet dated (`idea`) | **8** |
+| Scheduled or published | **6** |
 | Declined | **0** |
 
 ## Ideas
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Insight (4) · Agent infrastructure (3) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Agent infrastructure (3) · Insight (2) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
@@ -28,9 +28,7 @@ Ideas by area: Insight (4) · Agent infrastructure (3) · Case study (1) · Desi
 | [Computer and browser use for autonomous development](content/topics/computer-use-for-autonomous-development.md) | Agent infrastructure | Jenna Winkler | Radek Jezek | — |
 | [Cutting agent costs](content/topics/cutting-agent-costs.md) | Insight | Jenna Winkler | _unassigned_ | — |
 | [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
-| [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Insight | Matous Havlena | Petr Bulanek | — |
 | [Secure AI agents in enterprise](content/topics/secure-ai-agents-in-enterprise.md) | Agent infrastructure | Matous Havlena | Jan Pokorny | — |
-| [Sovereign AI: why you need a platform](content/topics/sovereign-ai.md) | Insight | Matous Havlena | Matous Havlena | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | Matous Havlena | — |
 | [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | Jenna Winkler, Tomas Weiss | — |
 
