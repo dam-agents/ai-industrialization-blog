@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **8** |
+| Ideas, not yet dated (`idea`) | **9** |
 | Scheduled or published | **6** |
 | Declined | **0** |
 
@@ -19,7 +19,7 @@ a file to `content/topics/` with `status: idea`.
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Agent infrastructure (3) · Insight (2) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Agent infrastructure (3) · Insight (3) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
@@ -31,6 +31,7 @@ Ideas by area: Agent infrastructure (3) · Insight (2) · Case study (1) · Desi
 | [Secure AI agents in enterprise](content/topics/secure-ai-agents-in-enterprise.md) | Agent infrastructure | Matous Havlena | Jan Pokorny | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | Matous Havlena | — |
 | [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | Jenna Winkler, Tomas Weiss | — |
+| [What DAM's first usage data shows](content/topics/what-dams-first-usage-data-shows.md) | Insight | Samantha Dempsey | _unassigned_ | — |
 
 ## Declined
 
