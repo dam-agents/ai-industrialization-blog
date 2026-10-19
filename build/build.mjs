@@ -97,7 +97,8 @@ function loadTopics() {
       errors.push(`${file}: status is published but content/posts/${file} is missing or empty`);
     }
 
-    topics.push({ slug, ...data, status, blurb: body, post });
+    // Topic bodies are briefs for the author; the site shows a short `blurb` when one is set.
+    topics.push({ slug, ...data, status, blurb: data.blurb || body, post });
   }
 
   // Two posts can't share a publish date.
