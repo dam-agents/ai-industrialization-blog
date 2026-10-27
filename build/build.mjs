@@ -251,7 +251,7 @@ function monthYear(iso) {
 
 // --- page shell --------------------------------------------------------------
 
-function shell({ site, title, description, body, nav, relative = '' }) {
+function shell({ site, title, description, body, nav, relative = '', image = '' }) {
   const base = relative;
   return `<!DOCTYPE html>
 <html lang="en">
@@ -263,7 +263,7 @@ function shell({ site, title, description, body, nav, relative = '' }) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+${image ? `<meta property="og:image" content="${esc(image)}">\n<meta name="twitter:card" content="summary_large_image">\n` : ''}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${base}styles.css?v=${CSS_VERSION}">
@@ -617,6 +617,8 @@ function renderPost(site, topic, topics) {
     body,
     nav: 'home',
     relative: '../',
+    // og:image must be absolute for Slack/LinkedIn link previews.
+    image: post.cover && site.url ? `${site.url.replace(/\/$/, '')}/posts/${post.cover}` : '',
   });
 }
 

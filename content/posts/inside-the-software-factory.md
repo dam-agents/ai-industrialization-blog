@@ -2,6 +2,7 @@
 lede: "AI is writing more code than people can review, so developers are trading line-by-line review for systems that automate the whole development process."
 sections: AI made writing code fast and reviewing it hard | An AI system that writes, reviews, tests, and ships code | The role of humans | Risk and the software factory | Building a software factory with DAM | Build your own | Humans decide how the factory runs
 read_time: 8 min read
+cover: images/inside-the-software-factory-cover.png
 ---
 
 AI coding tools now write code faster than many teams can review it, and the developers who know a system best spend their days reading pull requests they didn't write. Many teams respond by trying to make AI write better code, but a few are asking a bigger question: what would happen if we redesign the entire system of writing, reviewing, testing, and shipping software so that AI can do it autonomously?
