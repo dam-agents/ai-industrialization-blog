@@ -8,4 +8,4 @@ authors: "Jenna Winkler"
 publish_date: 2026-10-28
 ---
 
-As agents join our Slack channels, the skills that matter most are the ones good managers already have: onboarding, briefing, scoping access, delegating and knowing which rules to ask for and which to enforce.
+Agents are in our Slack channels now. They do their best work when we treat them like colleagues: give them context, a purpose and feedback, and save the hard limits for the platform.

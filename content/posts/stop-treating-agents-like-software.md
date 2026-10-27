@@ -2,11 +2,12 @@
 lede: "Agents are in our Slack channels now. They do their best work when we treat them like colleagues: give them context, a purpose and feedback."
 sections: Agents are joining the team | Onboard it | Brief it | One job, one owner | Delegate, then check | Give feedback that sticks | Ask or enforce | Get started
 read_time: 4 min read
+cover: images/stop-treating-agents-like-software-cover.png
 ---
 
 Agents now sit in the same Slack channels as the rest of us. They get tagged in threads, post updates and pick up work. Yet most of us still approach them the way we approach software. When does that habit help, and when does it get in the way?
 
-## 01 — Agents are joining the team, and we're still treating them like software
+## 01 — Agents are joining the team
 
 Every tool we've used taught us the same routine: find the setting, read the docs, wait for the feature. So most of the questions I get about agents start with "where's the setting for…". Usually there isn't one. You tell the agent, the way you'd tell a colleague.
 
@@ -197,6 +198,8 @@ Be most careful with an agent that reads content others can write, reaches priva
 </figure>
 
 So keep the "never do X" in the instruction file, then build what actually stops it. On DAM, our team's platform, the walls live in the platform, not the prompt: each agent reaches the sites and connections its owner approves, and never sees the real keys.
+
+So the old habit isn't wrong, it's just in the wrong place. Treat an agent like a colleague for how the work gets done, and like software for what must never happen.
 
 ## 08 — Get started
 
