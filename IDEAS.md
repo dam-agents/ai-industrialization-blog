@@ -12,7 +12,7 @@ a file to `content/topics/` with `status: idea`.
 | | Count |
 |---|---|
 | Ideas, not yet dated (`idea`) | **12** |
-| Scheduled or published | **6** |
+| Scheduled or published | **7** |
 | Declined | **0** |
 
 ## Ideas
