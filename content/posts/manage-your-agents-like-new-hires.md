@@ -1,6 +1,6 @@
 ---
 lede: "As agents join our Slack channels, the skills that matter most are the ones good managers already have."
-sections: Agents are joining the team | Onboard it | Brief it | Give it one job and the right access | Delegate, then check | Give feedback that sticks | Ask or enforce | Get started
+sections: Agents are joining the team | Onboard it | Brief it | One job, one owner | Delegate, then check | Give feedback that sticks | Ask or enforce | Get started
 read_time: 4 min read
 ---
 
@@ -8,9 +8,9 @@ Agents now sit in the same Slack channels as the rest of us. They get tagged in 
 
 ## 01 — Agents are joining the team, and we're still treating them like software
 
-Every tool we've used taught us the same routine: find the setting, read the docs, wait for the feature. With agents, the simpler route is often to tell the agent what you want, the way you'd tell a colleague.
+Every tool we've used taught us the same routine: find the setting, read the docs, wait for the feature. So most of the questions I get about agents start with "where's the setting for…". Usually there isn't one. You tell the agent, the way you'd tell a colleague.
 
-The skills that work are management skills: onboarding, briefing, scoping access, delegating and giving feedback. Most of us already have them. Here are the habits that have worked best for our team.
+The skills that work are management skills: onboarding, briefing, scoping access, delegating, giving feedback and, eventually, letting go. Most of us already have them. Here are the habits that have worked best for me and my team.
 
 
 ## 02 — Onboard it: teach it how your team works
@@ -98,9 +98,11 @@ Ask for a channel summary from inside a thread and you'll get a summary of the t
   <figcaption>Fig. 2 &mdash; Same workspace, three agents. Ask for a channel summary from inside a thread, and you get a summary of the thread.</figcaption>
 </figure>
 
-## 04 — Give it one job and the right access
+## 04 — Give it one job, one owner and the right access
 
 An agent with five jobs does each one worse, and needs more access than any one job requires. And an agent that uses your account *is* you to everyone else.
+
+A channel also gives it something no new hire has: a dozen managers. Anyone there can hand it work, and their asks will clash. A new hire would ask whose priority wins. An agent picks one and carries on. Give every agent a named owner, and write down whose requests come first.
 
 Slack is where this most often goes wrong. Teams want an agent that answers people in the channel and one that reads widely to build summaries. If one agent does both, it holds one person's account in a shared channel, and anyone there can ask it to read that person's messages or post in their name. Make those two agents:
 
@@ -131,7 +133,7 @@ Slack is where this most often goes wrong. Teams want an agent that answers peop
   <figcaption>Fig. 3 &mdash; One job per agent. The agent with your account reads widely and stays private; what it learns reaches the team as a report, never as access.</figcaption>
 </figure>
 
-You wouldn't give a new hire your password. An agent in a group chat shouldn't have it either.
+You wouldn't give a new hire your password. An agent in a group chat shouldn't have it either. And when the job ends, offboard it: retire the agent and remove its access. A forgotten agent still holds its keys.
 
 ## 05 — Delegate whole jobs, then check the work
 
@@ -139,6 +141,7 @@ Prompt, wait, read, prompt again is micromanagement. Hand over the whole job ins
 
 - **Ask for silence on quiet days,** so its posts keep meaning something.
 - **Have it log every run.** A job that fails silently looks the same as a quiet day.
+- **Make it say what it couldn't do.** A new hire says "I'm stuck." An agent fills the gap with a confident answer and rarely pushes back. Ask it to name what it couldn't see, and any concerns, before it hands the work over.
 - **Check the spend** after the first real week, before adding more schedules.
 - **Check what data your platform is cleared for** before giving an agent anything sensitive.
 
@@ -146,10 +149,11 @@ Prompt, wait, read, prompt again is micromanagement. Hand over the whole job ins
 
 - **Say why, not just what.** "This isn't working" gets a reworded draft. "The point is that we need to step back, not that the design is wrong" gets a better one.
 - **Save the lesson.** After a round of back and forth, have the agent write what it learned into its instruction file or a skill, a packaged set of instructions for one kind of task. Then everyone who uses that agent benefits.
+- **Review it every month or so.** Instruction files grow, go stale and start to contradict themselves. Ask the agent to read its file back and flag the rules that conflict or no longer apply.
 
 ## 07 — Ask or enforce: know which rules are requests and which are walls
 
-This is where the new-hire analogy breaks, and it's the distinction that matters most.
+This is where the new-hire analogy breaks hardest, and it's the distinction that matters most.
 
 - **Requests** are instruction files, skills and corrections in chat. The agent follows them most of the time, but they're only words, so other words can override them: a vague prompt, a long conversation, or text planted in a web page or shared document. A colleague can tell their manager's request from a strange line in a stranger's email. An agent can't, reliably.
 - **Walls** are permissions, credentials you never hand over, network rules and approval steps. They hold whatever the agent reads, because the agent can't change them.
