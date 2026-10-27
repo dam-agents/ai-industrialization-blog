@@ -12,31 +12,6 @@ Every tool we've used taught us the same routine: find the setting, read the doc
 
 The skills that work are management skills: onboarding, briefing, scoping access, delegating and giving feedback. Most of us already have them. Here are the habits that have worked best for our team.
 
-<figure class="post-figure fig-hire" aria-label="The same request made two ways: searching a settings page finds nothing; asking the agent in Slack saves the rule to its instruction file">
-  <div class="fh-grid">
-    <div class="fh-panel fh-panel-sw">
-      <div class="fh-tab"><span class="fh-tab-key">TREATED LIKE SOFTWARE</span></div>
-      <div class="fh-app">
-        <div class="fh-app-head">Agent settings</div>
-        <div class="fh-search"><span class="fh-search-icon"></span>keep updates short</div>
-        <div class="fh-empty">No settings match &ldquo;keep updates short&rdquo;</div>
-        <div class="fh-ghost"><span></span><span></span><span></span></div>
-      </div>
-      <div class="fh-out fh-out-sw">Nothing changes. The next update is just as long.</div>
-    </div>
-    <div class="fh-panel fh-panel-hire">
-      <div class="fh-tab"><span class="fh-tab-key fh-tab-key-hire">MANAGED LIKE A NEW HIRE</span></div>
-      <div class="fh-app">
-        <div class="fh-app-head">#team &middot; thread</div>
-        <div class="fh-msg"><span class="fh-av fh-av-you">Y</span><div><div class="fh-who">You</div>Too long. From now on, keep updates to three bullets, and save that rule.</div></div>
-        <div class="fh-msg"><span class="fh-av fh-av-agent">A</span><div><div class="fh-who">Agent <span class="fh-tag">AGENT</span></div>Got it. Saved to my instructions.
-          <div class="fh-diff"><span class="fh-diff-file">AGENTS.md</span><span class="fh-diff-add">+ Keep updates to three bullets.</span></div></div></div>
-      </div>
-      <div class="fh-out fh-out-hire">Every later conversation follows the rule.</div>
-    </div>
-  </div>
-  <figcaption>Fig. 1 &mdash; The same request, made two ways. Software waits for a setting; a teammate takes the correction and writes it down.</figcaption>
-</figure>
 
 ## 02 — Onboard it: teach it how your team works
 
@@ -45,6 +20,38 @@ Most agents read an instruction file, usually `AGENTS.md` or `CLAUDE.md`, at the
 - **Correct it like a colleague, then have it write the rule down.** "Keep updates to three bullets. Save that rule in your AGENTS.md."
 - **Use the file for role, style and lessons.** Who it works for, how your team writes, and whatever went wrong yesterday.
 - **Ask before you search for a button.** Cloning a repository, watching a channel or publishing a report is usually one request.
+
+<figure class="post-figure fig-hire" aria-label="Two weeks with the same agent: correcting it without saving the rule means repeating yourself every day; saving the rule once means it sticks">
+  <div class="fh-grid">
+    <div class="fh-panel fh-panel-sw">
+      <div class="fh-tab"><span class="fh-tab-key">CORRECT IT EVERY TIME</span></div>
+      <div class="fh-app">
+        <div class="fh-app-head">#team</div>
+        <div class="fh-day">MON</div>
+        <div class="fh-msg"><span class="fh-av fh-av-agent">A</span><div class="fh-long"><span></span><span></span><span></span><span></span></div></div>
+        <div class="fh-msg"><span class="fh-av fh-av-you">Y</span><div>Too long. Three bullets, please.</div></div>
+        <div class="fh-day">TUE</div>
+        <div class="fh-msg"><span class="fh-av fh-av-agent">A</span><div class="fh-long"><span></span><span></span><span></span><span></span></div></div>
+        <div class="fh-msg"><span class="fh-av fh-av-you">Y</span><div>Again: three bullets.</div></div>
+      </div>
+      <div class="fh-out fh-out-sw">Every new conversation starts from scratch.</div>
+    </div>
+    <div class="fh-panel fh-panel-hire">
+      <div class="fh-tab"><span class="fh-tab-key fh-tab-key-hire">TEACH IT ONCE</span></div>
+      <div class="fh-app">
+        <div class="fh-app-head">#team</div>
+        <div class="fh-day">MON</div>
+        <div class="fh-msg"><span class="fh-av fh-av-you">Y</span><div>Too long. From now on, keep updates to three bullets, and save that rule.</div></div>
+        <div class="fh-msg"><span class="fh-av fh-av-agent">A</span><div><div class="fh-who">Agent <span class="fh-tag">AGENT</span></div>Saved to my instructions.
+          <div class="fh-diff"><span class="fh-diff-file">AGENTS.md</span><span class="fh-diff-add">+ Keep updates to three bullets.</span></div></div></div>
+        <div class="fh-day">TUE</div>
+        <div class="fh-msg"><span class="fh-av fh-av-agent">A</span><div class="fh-short"><span></span><span></span><span></span></div></div>
+      </div>
+      <div class="fh-out fh-out-hire">The rule holds in every later conversation.</div>
+    </div>
+  </div>
+  <figcaption>Fig. 1 &mdash; A correction you don&rsquo;t save is one you&rsquo;ll repeat. Ask the agent to write it down, the way a new hire takes notes.</figcaption>
+</figure>
 
 A new hire remembers yesterday. An agent remembers only what's written down.
 
