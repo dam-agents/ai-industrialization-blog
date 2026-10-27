@@ -1,6 +1,6 @@
 ---
 title: "Inside the software factory: when humans stop reviewing code"
-tag: Insight
+tag: Autonomous development
 status: published
 proposed_by: Matous Havlena
 proposed_on: 2026-08-28
