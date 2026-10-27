@@ -104,7 +104,7 @@ Slack is where this most often goes wrong. Teams want an agent that answers peop
       <div class="fsp-body">
         <div class="fsp-msg"><span class="fsp-av fsp-av-p">P</span><div><div class="fsp-who">Teammate</div>What did we decide about the launch date?</div></div>
         <div class="fsp-msg"><span class="fsp-av fsp-av-a">C</span><div><div class="fsp-who">Channel agent <span class="fsp-tag">AGENT</span></div>Nov 4. It&rsquo;s in this morning&rsquo;s summary.</div></div>
-        <div class="fsp-msg fsp-msg-report"><span class="fsp-av fsp-av-r">R</span><div><div class="fsp-who">Reading agent <span class="fsp-tag">BOT</span></div><span class="fsp-report-k">DAILY SUMMARY</span>3 decisions &middot; 2 open questions &middot; 1 blocker</div></div>
+        <div class="fsp-msg fsp-msg-report"><span class="fsp-av fsp-av-r">R</span><div><div class="fsp-who">Reading agent <span class="fsp-tag">AGENT</span></div><span class="fsp-report-k">DAILY SUMMARY</span>3 decisions &middot; 2 open questions &middot; 1 blocker</div></div>
       </div>
       <div class="fsp-foot"><span class="fsp-dot"></span>Holds only what the team shares</div>
     </div>
