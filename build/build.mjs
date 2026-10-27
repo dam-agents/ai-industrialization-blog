@@ -165,17 +165,23 @@ function markdown(src) {
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/(^|[\s(])\*([^*]+)\*/g, '$1<em>$2</em>')
-      .replace(/`([^`]+)`/g, '<code>$1</code>');
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\[(\d+)\](?!\()/g, '<a class="cite" href="#ref-$1">[$1]</a>');
 
   const out = [];
+  let h2 = 0;
   for (const block of src.split(/\n{2,}/)) {
     const b = block.trim();
     if (!b) continue;
     let m;
     // A block that begins with an HTML tag is passed through verbatim (e.g. figures).
-    if (/^<[a-zA-Z]/.test(b)) out.push(b);
+    if (/^<[a-zA-Z]/.test(b)) {
+      // Number reference-list items so inline [n] citations can link to them.
+      let n = 0;
+      out.push(/^<ol class="post-refs">/.test(b) ? b.replace(/<li>/g, () => `<li id="ref-${++n}">`) : b);
+    }
     else if ((m = /^###\s+(.*)$/s.exec(b))) out.push(`<h3 class="post-h3">${inline(m[1])}</h3>`);
-    else if ((m = /^##\s+(.*)$/s.exec(b))) out.push(`<h2 class="post-h2">${inline(m[1])}</h2>`);
+    else if ((m = /^##\s+(.*)$/s.exec(b))) out.push(`<h2 class="post-h2" id="section-${++h2}">${inline(m[1])}</h2>`);
     else if ((m = /^!\[([^\]]*)\]\(([^)]+)\)\s*(.*)$/s.exec(b))) {
       // ![alt](images/file.png) — any lines after it become the caption.
       const caption = m[3].trim().replace(/\n/g, ' ');
@@ -245,7 +251,7 @@ function monthYear(iso) {
 
 // --- page shell --------------------------------------------------------------
 
-function shell({ site, title, description, body, nav, relative = '' }) {
+function shell({ site, title, description, body, nav, relative = '', image = '' }) {
   const base = relative;
   return `<!DOCTYPE html>
 <html lang="en">
@@ -257,7 +263,7 @@ function shell({ site, title, description, body, nav, relative = '' }) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+${image ? `<meta property="og:image" content="${esc(image)}">\n<meta name="twitter:card" content="summary_large_image">\n` : ''}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${base}styles.css?v=${CSS_VERSION}">
@@ -574,7 +580,7 @@ function renderPost(site, topic, topics) {
         ${sections
           .map(
             (s, i) =>
-              `<span class="toc-item"><span class="mono toc-n">${String(i + 1).padStart(2, '0')}</span><span>${esc(s)}</span></span>`
+              `<a class="toc-item" href="#section-${i + 1}"><span class="mono toc-n">${String(i + 1).padStart(2, '0')}</span><span>${esc(s)}</span></a>`
           )
           .join('\n        ')}
       </nav>
@@ -611,6 +617,8 @@ function renderPost(site, topic, topics) {
     body,
     nav: 'home',
     relative: '../',
+    // og:image must be absolute for Slack/LinkedIn link previews.
+    image: post.cover && site.url ? `${site.url.replace(/\/$/, '')}/posts/${post.cover}` : '',
   });
 }
 

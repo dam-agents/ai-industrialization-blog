@@ -472,6 +472,12 @@ a { color: var(--blue); }
   gap: 12px;
 }
 .toc-n { color: var(--faint); }
+a.toc-item { text-decoration: none; }
+a.toc-item:hover { color: var(--blue); }
+/* Land anchored headings and references below the sticky site header. */
+.post-h2, .post-refs li { scroll-margin-top: 96px; }
+.post-body a.cite { text-decoration: none; }
+.post-body a.cite:hover { text-decoration: underline; }
 
 .post-body { max-width: 68ch; }
 .post-body .post-p {
@@ -1428,3 +1434,87 @@ a { color: var(--blue); }
   .fig-split .fsp-priv { order: 3; }
   .fig-wall .fw-lanes { grid-template-columns: 1fr; }
 }
+
+/* --- fig-factory: Fig. 1 of "Inside the software factory". SVG text is sized for the post
+   column (about 620px wide); below 720px the drawing swaps for a stacked list. --- */
+.fig-factory .ff-wrap { border: 1px solid var(--line); }
+.fig-factory .ff-panel { padding: 16px 14px 14px; display: flex; flex-direction: column; gap: 8px; }
+.fig-factory .ff-today { background: var(--bg-alt); }
+.fig-factory .ff-factory { background: #edf5ff; border-top: 1px solid var(--line); }
+.fig-factory .ff-title { font-weight: 600; font-size: 17px; padding: 0 4px; }
+.fig-factory .ff-note { font-size: 14px; line-height: 1.5; color: var(--ink-2); padding: 0 4px; }
+.fig-factory svg text { font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif; fill: var(--ink); }
+.fig-factory .ff-col { font-size: 24px; font-weight: 600; }
+.fig-factory .ff-lbl { font-size: 21px; }
+.fig-factory .ff-who { font-size: 21px; font-weight: 600; }
+.fig-factory .ff-plus { font-size: 30px; font-weight: 600; }
+.fig-factory .ff-bar { font-size: 24px; }
+.fig-factory .ff-crit { font-size: 20px; }
+.fig-factory .ff-m { display: none; list-style: none; }
+.fig-factory .ff-m ol { list-style: none; }
+.fig-factory .ff-m-step {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  background: #fff; border: 1.5px solid var(--ink); padding: 10px 12px; font-size: 14px;
+}
+.fig-factory .ff-m-name { font-weight: 600; font-size: 15px; display: block; }
+.fig-factory .ff-m-who { display: flex; align-items: center; gap: 6px; }
+.fig-factory .ff-m-plus { font-weight: 600; }
+.fig-factory .ff-m-ico { display: block; flex: none; }
+.fig-factory .ff-m-link { display: flex; align-items: center; gap: 10px; padding: 4px 0 4px 18px; font-size: 13px; color: var(--ink-2); }
+.fig-factory .ff-m-down { display: block; flex: none; }
+.fig-factory .ff-m-bar {
+  display: flex; align-items: center; gap: 10px; background: #fff; border: 1.5px solid var(--ink);
+  padding: 10px 12px; font-size: 14px; line-height: 1.4; margin-bottom: 10px;
+}
+.fig-factory .ff-m-loopstep { display: flex; align-items: center; gap: 14px; }
+.fig-factory .ff-m-loop { display: block; flex: none; }
+.fig-factory .ff-m-sub { display: block; font-size: 13px; color: var(--ink-3); }
+.fig-factory .ff-m-loopstep + .ff-m-link { padding-left: 21px; }
+
+/* --- fig-autonomy: Fig. 2 of "Inside the software factory". Same swap as Fig. 1. --- */
+.fig-autonomy .fa-frame { border: 1px solid var(--line); padding: 16px 12px; }
+.fig-autonomy svg text { font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif; fill: var(--ink); }
+.fig-autonomy .fa-end { font-size: 19px; font-weight: 600; }
+.fig-autonomy .fa-pill { font-size: 17px; font-weight: 600; }
+.fig-autonomy .fa-ai { font-size: 18px; fill: var(--blue-hover); }
+.fig-autonomy .fa-mv { font-size: 18px; }
+.fig-autonomy .fa-hd { font-size: 19px; font-weight: 700; }
+.fig-autonomy .fa-m { display: none; }
+.fig-autonomy .fa-m ol { list-style: none; display: flex; flex-direction: column; gap: 14px; margin: 14px 0; }
+.fig-autonomy .fa-m-ends { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; }
+.fig-autonomy .fa-m-bar, .fig-autonomy .fa-m-track {
+  flex: 1; height: 12px; border-radius: 6px; border: 1.5px solid var(--ink);
+  background: linear-gradient(90deg, #fff, var(--blue));
+}
+.fig-autonomy .fa-m-card { display: flex; flex-direction: column; gap: 8px; }
+.fig-autonomy .fa-m-track { display: block; position: relative; flex: none; height: 10px; }
+.fig-autonomy .fa-m-dot {
+  position: absolute; top: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px;
+  border-radius: 50%; background: #fff; border: 2px solid var(--ink);
+}
+.fig-autonomy .fa-m-line { font-size: 14px; font-weight: 600; color: var(--blue-hover); }
+.fig-autonomy .fa-m-pills { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.fig-autonomy .fa-m-pill {
+  display: flex; align-items: center; gap: 6px; padding: 6px 8px; font-size: 13px; font-weight: 600;
+  background: #fff; border: 1.2px solid var(--ink);
+}
+.fig-autonomy .fa-m-ai { background: var(--blue); border-color: var(--blue); color: #fff; border-radius: 7px; }
+.fig-autonomy .fa-m-ai .fa-m-ico rect { fill: none; }
+.fig-autonomy .fa-m-ico { display: block; flex: none; width: 14px; height: 14px; }
+.fig-autonomy .fa-m-decide { border: 1.8px solid var(--ink); background: #fff; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
+.fig-autonomy .fa-m-hd { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; }
+.fig-autonomy .fa-m-mv { font-size: 14px; line-height: 1.4; }
+.fig-autonomy .fa-m-more { color: var(--blue-hover); }
+
+@media (max-width: 720px) {
+  .fig-factory .ff-desk, .fig-autonomy .fa-desk { display: none; }
+  .fig-factory .ff-m, .fig-autonomy .fa-m { display: block; }
+}
+
+/* --- fig-incident: Fig. 3 of "Inside the software factory". Uses the fig-thread styles from
+   "Agents as Teammates"; only the silhouette avatars and multi-paragraph agent reply are new. --- */
+.fig-incident .fi-sil { display: block; overflow: hidden; }
+.fig-incident .fi-sil svg { display: block; }
+.fig-incident .fi-av-dam { font-size: 9.5px; letter-spacing: 0.02em; }
+.fig-incident .fi-p + .fi-p { margin-top: 6px; }
+
