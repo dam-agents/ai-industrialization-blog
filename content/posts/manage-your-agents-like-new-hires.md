@@ -19,7 +19,6 @@ Most agents read an instruction file, usually `AGENTS.md` or `CLAUDE.md`, at the
 
 - **Correct it like a colleague, then have it write the rule down.** "Keep updates to three bullets. Save that rule in your AGENTS.md."
 - **Use the file for role, style and lessons.** Who it works for, how your team writes, and whatever went wrong yesterday.
-- **Ask before you search for a button.** Cloning a repository, watching a channel or publishing a report is usually one request.
 
 <figure class="post-figure fig-hire" aria-label="Two weeks with the same agent: correcting it without saving the rule means repeating yourself every day; saving the rule once means it sticks">
   <div class="fh-grid">
@@ -137,18 +136,15 @@ You wouldn't give a new hire your password. An agent in a group chat shouldn't h
 
 ## 05 — Delegate whole jobs, then check the work
 
-Prompt, wait, read, prompt again is micromanagement. Hand over the whole job instead: "Every weekday at 9am, summarize what changed in this repo and post it here." Then keep a light touch:
+Prompt, wait, read, prompt again is micromanagement. Hand over the whole job instead: "Every weekday at 9am, summarize what changed in this repo and post it here." Then check it the way you'd check a new hire's first weeks:
 
-- **Ask for silence on quiet days,** so its posts keep meaning something.
 - **Have it log every run.** A job that fails silently looks the same as a quiet day.
 - **Make it say what it couldn't do.** A new hire says "I'm stuck." An agent fills the gap with a confident answer and rarely pushes back. Ask it to name what it couldn't see, and any concerns, before it hands the work over.
-- **Check the spend** after the first real week, before adding more schedules.
-- **Check what data your platform is cleared for** before giving an agent anything sensitive.
 
 ## 06 — Give feedback that sticks
 
 - **Say why, not just what.** "This isn't working" gets a reworded draft. "The point is that we need to step back, not that the design is wrong" gets a better one.
-- **Save the lesson.** After a round of back and forth, have the agent write what it learned into its instruction file or a skill, a packaged set of instructions for one kind of task. Then everyone who uses that agent benefits.
+- **Save the lesson.** After a round of back and forth, have the agent write what it learned into its instruction file. Then everyone who uses that agent benefits.
 - **Review it every month or so.** Instruction files grow, go stale and start to contradict themselves. Ask the agent to read its file back and flag the rules that conflict or no longer apply.
 
 ## 07 — Ask or enforce: know which rules are requests and which are walls
