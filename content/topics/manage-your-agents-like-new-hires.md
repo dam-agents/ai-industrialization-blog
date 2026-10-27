@@ -1,5 +1,5 @@
 ---
-title: "Manage your agents like new hires"
+title: "Agents joined the channel. Now someone has to manage them."
 tag: Insight
 status: published
 proposed_by: Jenna Winkler
