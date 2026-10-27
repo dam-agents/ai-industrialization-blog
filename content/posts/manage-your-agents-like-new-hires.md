@@ -1,5 +1,5 @@
 ---
-lede: "As agents join our Slack channels, the skills that matter most are the ones good managers already have."
+lede: "Agents are in our Slack channels now. They do their best work when we treat them like colleagues: give them context, a purpose and feedback."
 sections: Agents are joining the team | Onboard it | Brief it | One job, one owner | Delegate, then check | Give feedback that sticks | Ask or enforce | Get started
 read_time: 4 min read
 ---
@@ -9,6 +9,8 @@ Agents now sit in the same Slack channels as the rest of us. They get tagged in 
 ## 01 — Agents are joining the team, and we're still treating them like software
 
 Every tool we've used taught us the same routine: find the setting, read the docs, wait for the feature. So most of the questions I get about agents start with "where's the setting for…". Usually there isn't one. You tell the agent, the way you'd tell a colleague.
+
+That shift changes what you get back. Software stays the way you set it up. A colleague gets better the more you tell them, and so does an agent.
 
 The skills that work are management skills: onboarding, briefing, scoping access, delegating, giving feedback and, eventually, letting go. Most of us already have them. Here are the habits that have worked best for me and my team.
 
@@ -202,4 +204,4 @@ So keep the "never do X" in the instruction file, then build what actually stops
 - Hand it a whole job, not a single step. :: Every weekday at 9am, summarize what changed in this repo and post it here
 - Check which of its rules are walls. :: List every rule in your AGENTS.md that would cause harm if you ignored it once, and tell me what actually stops you
 
-Agents will keep joining our channels. The biggest gain won't come from better models. It'll come from managing agents with the skills we already use on each other.
+Agents will keep joining our channels. Give them context, a purpose and feedback, the way you would any colleague, and they'll keep getting better at the work.

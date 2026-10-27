@@ -1,5 +1,5 @@
 ---
-title: "Agents joined the channel. Now someone has to manage them."
+title: "Agents joined the channel. Stop treating them like software."
 tag: Insight
 status: published
 proposed_by: Jenna Winkler
