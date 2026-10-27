@@ -196,7 +196,7 @@ Be most careful with an agent that reads content others can write, reaches priva
   <figcaption>Fig. 4 &mdash; A request is words, so other words can override it. A wall holds whatever the agent reads.</figcaption>
 </figure>
 
-So keep the "never do X" in the instruction file, then build what actually stops it. On DAM, our team's platform, the walls live in the platform, not the prompt: each agent can only reach the sites and connections its owner approved, and never sees the real keys.
+So keep the "never do X" in the instruction file, then build what actually stops it. On DAM, our team's platform, the walls live in the platform, not the prompt: each agent reaches the sites and connections its owner approves, and never sees the real keys.
 
 ## 08 — Get started
 
