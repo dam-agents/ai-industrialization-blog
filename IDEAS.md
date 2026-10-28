@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **12** |
+| Ideas, not yet dated (`idea`) | **13** |
 | Scheduled or published | **6** |
 | Declined | **0** |
 
@@ -19,7 +19,7 @@ a file to `content/topics/` with `status: idea`.
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Insight (5) · Agent infrastructure (4) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Insight (6) · Agent infrastructure (4) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
@@ -33,6 +33,7 @@ Ideas by area: Insight (5) · Agent infrastructure (4) · Case study (1) · Desi
 | [QA in the post-AI era](content/topics/qa-in-the-post-ai-era.md) | Insight | Samantha Dempsey | Tomas Weiss | — |
 | [Secure AI agents in enterprise](content/topics/secure-ai-agents-in-enterprise.md) | Agent infrastructure | Matous Havlena | Jan Pokorny | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | Matous Havlena | — |
+| [Agents joined the channel. Stop treating them like software.](content/topics/stop-treating-agents-like-software.md) | Insight | Jenna Winkler | Jenna Winkler | — |
 | [The team brain](content/topics/the-team-brain.md) | Insight | Jenna Winkler | Jenna Winkler, Tomas Weiss | — |
 | [What DAM's first usage data shows](content/topics/what-dams-first-usage-data-shows.md) | Insight | Samantha Dempsey | _unassigned_ | — |
 
