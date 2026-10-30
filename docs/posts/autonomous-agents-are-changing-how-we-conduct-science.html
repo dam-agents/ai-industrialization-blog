@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autonomous agents are changing how we conduct science — AI Industrialization</title>
+<meta name="description" content="AI-native research hands the experiment loop to agents and changes the researcher’s role.">
+<meta property="og:title" content="Autonomous agents are changing how we conduct science — AI Industrialization">
+<meta property="og:description" content="AI-native research hands the experiment loop to agents and changes the researcher’s role.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=aa1e16c9">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-org">IBM Research</span>
+      <span class="brand-name">AI Industrialization</span>
+    </a>
+    <nav class="site-nav">
+      <a href="../index.html" class="current">Writing</a>
+      <a href="../about.html">Who we are</a>
+      <a href="../calendar.html">What's coming</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <article>
+    <header class="post-header">
+      <div class="wrap">
+        <a class="mono-label accent back" href="../index.html">← All writing</a>
+        <h1 class="post-h1">Autonomous agents are changing how we conduct science</h1>
+        <p class="post-lede">AI-native research hands the experiment loop to agents and changes the researcher’s role.</p>
+        <div class="post-meta">
+          <div class="post-meta-item"><span class="mono-label dim">Authors</span><span>Tomas Weiss, Samantha Dempsey</span></div>
+          <div class="post-meta-item"><span class="mono-label dim">Published</span><span>October 14, 2026</span></div>
+          <div class="post-meta-item"><span class="mono-label dim">Topic</span><span>Autonomous experimentation</span></div>
+          <div class="post-meta-item"><span class="mono-label dim">Read time</span><span>6 min read</span></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap post-grid">
+      <nav class="post-toc">
+        <a class="toc-item" href="#section-1"><span class="mono toc-n">01</span><span>From assisted to autonomous research</span></a>
+        <a class="toc-item" href="#section-2"><span class="mono toc-n">02</span><span>Superpowering individual researchers</span></a>
+        <a class="toc-item" href="#section-3"><span class="mono toc-n">03</span><span>A team of researchers and agents</span></a>
+        <a class="toc-item" href="#section-4"><span class="mono toc-n">04</span><span>DAM provides the infrastructure</span></a>
+        <a class="toc-item" href="#section-5"><span class="mono toc-n">05</span><span>Build your own experiment in DAM</span></a>
+      </nav>
+
+      <div class="post-body">
+        <p class="post-p">AI agentic systems are becoming capable of running the scientific method on their own: they can propose a change, test it, observe the results, and decide what to try next. What does the future of experimentation look like when agents autonomously loop through the cycle of discovery, and what are the steps we can take today to bring that future closer?</p>
+<p class="post-p">Humanity’s stories of great scientific discoveries tell the tale of a human performing the scientific method. Rosalind Franklin, Louis Pasteur, and Marie Curie all created hypotheses, tested them with an experiment, interpreted the results, and revised their hypothesis. With the advent of AI-native research, human researchers are beginning to hand off parts of the process to agents who can run experiments autonomously. This kind of automation isn’t just an on-or-off switch. It’s a spectrum, and researchers everywhere are in the process of defining where they fall on it.</p>
+<h2 class="post-h2" id="section-1">01 — From assisted research to autonomous research</h2>
+<p class="post-p">Many researchers use AI to assist with everyday tasks like summarizing papers, exploring ideas, and writing code. However, the type of AI use reshaping scientific research is <em>automation of the experimental process itself</em> rather than assistance. We call the autonomous participation of AI in the research process “AI-native research”. The experimental process is one aspect of AI-native research. The scientific community is currently in the process of understanding what aspects of the research process, including the experimental process, could be automated by AI and how much autonomy they want to give the agents doing that automation.</p>
+<blockquote class="pull"><p>This kind of automation isn’t just an on-or-off switch. It’s a spectrum, and researchers everywhere are in the process of defining where they fall on it.</p></blockquote>
+<p class="post-p">One way to think about the experimental process is the design-build-test-learn cycle (DBTL). It describes a series of iterative loops where (traditionally) human researchers make something to test a hypothesis, observe how the thing performs during a test, and then make changes to the thing based on their observations. When run by humans, this process is very hands-on and takes significant time. However, due to recent advancements, agents now have the potential to eventually automate every part of that process. As the technology progresses, it’s up to researchers to determine where and how they want to invite agents to step in.</p>
+<figure class="post-figure fig-loop" aria-labelledby="fig1-cap">
+<ol class="fl-steps">
+<li class="fl-step"><span class="fl-key">01</span><span class="fl-name">Design</span><span class="fl-desc">Plan a change that tests a hypothesis.</span></li>
+<li class="fl-step"><span class="fl-key">02</span><span class="fl-name">Build</span><span class="fl-desc">Make the thing you want to test.</span></li>
+<li class="fl-step"><span class="fl-key">03</span><span class="fl-name">Test</span><span class="fl-desc">Observe how it performs.</span></li>
+<li class="fl-step"><span class="fl-key">04</span><span class="fl-name">Learn</span><span class="fl-desc">Decide what to change next.</span></li>
+</ol>
+<div class="fl-return"><span class="fl-return-label"><span aria-hidden="true">&#8634; </span>REPEAT</span><span>Learnings from the previous cycle shape the next design phase.</span></div>
+<figcaption id="fig1-cap">Fig. 1 &mdash; The design-build-test-learn cycle. Agents eventually might run every step.</figcaption>
+</figure>
+<h2 class="post-h2" id="section-2">02 — Superpowering individual researchers with autonomous research agents</h2>
+<p class="post-p">Some individual researchers have already brought agents into every part of the experimental process. Agents have been used to help design experiments, build proposed solutions, test them, and use the findings to inform the next round of iteration. Projects such as Andrej Karpathy’s autoresearch <a class="cite" href="#ref-1">[1]</a> and Google DeepMind’s AlphaEvolve <a class="cite" href="#ref-2">[2]</a><a class="cite" href="#ref-3">[3]</a> offer early examples of AI-native research frameworks that can propose changes, test them, and use the results to guide another round of experiments with limited human intervention. Researchers adopting these systems are able to set a direction for an experiment, leave an agent exploring possible solutions overnight, and return to findings that shape the next day’s work.</p>
+<figure class="post-figure fig-night" aria-labelledby="fig2-cap">
+<div class="tl-top"><strong>An overnight run</strong></div>
+<div class="tl-grid">
+<div class="tl-slack tl-slack-r tl-r1"><svg class="tl-stem tl-stem-down" width="2" height="18" viewBox="0 0 2 18" aria-hidden="true" focusable="false"><rect width="2" height="18" fill="#c6c6c6" shape-rendering="crispEdges"/></svg><span class="tl-when">18:40</span><div class="tl-msg"><span class="tl-av tl-av-r" aria-hidden="true">R</span><div><div class="tl-name">Researcher</div><p>Make the parser faster. Score each try by median benchmark time. Run every hour tonight.</p></div></div></div>
+<div class="tl-solo tl-c2"><svg class="tl-stem tl-stem-up" width="2" height="18" viewBox="0 0 2 18" aria-hidden="true" focusable="false"><rect width="2" height="18" fill="#0f62fe" shape-rendering="crispEdges"/></svg><span class="tl-when">19:00 to 06:00</span><span class="tl-who"><span class="tl-mark tl-mark-a" aria-hidden="true"></span>AGENT, ON ITS OWN</span><ul class="tl-log">
+<li><span class="tl-log-t">19:00</span>Round 1 &middot; 412 ms</li>
+<li><span class="tl-log-t">21:00</span>Round 3 &middot; failed tests</li>
+<li class="tl-log-best"><span class="tl-log-t">05:00</span>Round 11 &middot; 287 ms, best</li>
+</ul></div>
+<div class="tl-slack tl-slack-a tl-c3"><svg class="tl-stem tl-stem-up" width="2" height="18" viewBox="0 0 2 18" aria-hidden="true" focusable="false"><rect width="2" height="18" fill="#c6c6c6" shape-rendering="crispEdges"/></svg><span class="tl-when">07:00</span><div class="tl-msg"><span class="tl-av tl-av-a" aria-hidden="true">D</span><div><div class="tl-name">DAM <span class="tl-tag">AGENT</span></div><p>Best is round 11 at 287 ms. Round 9 is faster but changes the error format. Keep 9 or 11?</p></div></div></div>
+<div class="tl-slack tl-slack-r tl-r2"><svg class="tl-stem tl-stem-down" width="2" height="18" viewBox="0 0 2 18" aria-hidden="true" focusable="false"><rect width="2" height="18" fill="#c6c6c6" shape-rendering="crispEdges"/></svg><span class="tl-when">08:15</span><div class="tl-msg"><span class="tl-av tl-av-r" aria-hidden="true">R</span><div><div class="tl-name">Researcher</div><p>Keep 11. Try the tokenizer tonight.</p></div></div></div>
+<div class="tl-axis" aria-hidden="true"><span class="tl-tick tl-c1">18:40</span><span class="tl-tick tl-tick-span tl-c2"><span class="tl-tick-lbl">19:00 to 06:00</span></span><span class="tl-tick tl-c3">07:00</span><span class="tl-tick tl-c4">08:15</span></div>
+</div>
+<figcaption id="fig2-cap">Fig. 2 &mdash; Example: the agent runs rounds of the loop overnight, and the researcher steers in the morning.</figcaption>
+</figure>
+<p class="post-p">As researchers begin delegating more of the process to AI agents, their role shifts from building experimental infrastructure and executing every step to instead steering the work and designing the systems in which the agents can loop through the design-build-test-learn cycle autonomously. With less time spent on routine execution, researchers can devote more attention to deciding what to investigate, interpreting the results, and working with others to move the research forward. Where a result requires human judgment, researchers can opt to stay in the loop for that step.</p>
+<p class="post-p">Different parts of the experimental process have the potential to reach different levels of AI automation and autonomy. The need for human oversight and qualitative decision-making determines how much autonomy an agent can be given. For example, experiments that require a human’s judgment to decide which output is better lack a quantitative evaluation metric. An agent won’t be able to evaluate results without this quantifiable definition of what “better” means. This breaks the loop and decreases an agent’s ability to work autonomously. Additionally, agents can only evaluate what they can see, so the entire system needs to be visible to agents in order for them to run the design-build-test-learn cycle without relying on humans to close the loop.</p>
+<h2 class="post-h2" id="section-3">03 — Creating a team of researchers and agents</h2>
+<p class="post-p">Today, single researchers are utilizing autonomous agents to enhance their own closed-loop experimental processes. What might a future look like where individual experiment loops become part of a larger investigation shared by several researchers and their agents? Findings would flow between loops, allowing different researchers and their agents to turn colleagues’ results into context for their next experiment. With this increased context, agents could point to the areas that deserve more experiments, drawing on everything the team has learned. Researchers would then have a stronger basis for deciding where to steer the work next.</p>
+<p class="post-p">This workflow only becomes possible when all the team’s research is documented in one place that’s accessible to both researchers and agents. A shared knowledge base containing all experiments, results, the reasoning behind decisions, and approaches that failed would give agents the capability to avoid repeating work and to form better hypotheses. It would also allow the researchers to query the shared knowledge base to form their own understanding of the team’s previous work and how it informs larger strategy and goals.</p>
+<p class="post-p">This vision also requires that researchers and agents share a common place, like Slack, where they could interact. This needs to be visible and accessible to agents and humans alike. In this shared space, agents could report progress, ask for a decision when human judgment is required, and take direction from the team. This transparency into researchers’ real-time decision-making conversations would give agents access to up-to-date information without a human needing to explicitly upload meeting notes. These coordinated efforts would go beyond achieving individual researcher goals to furthering collective team goals.</p>
+<figure class="post-figure fig-team" aria-labelledby="fig3-cap">
+<div class="ftm-top"><strong>A team of researchers and agents</strong></div>
+<ul class="ftm-loops"><li class="ftm-loop"><svg class="ftm-ring" viewBox="0 0 132 132" width="132" height="132" aria-hidden="true" focusable="false"><path d="M82.4 20.9 A48 48 0 0 1 111.1 49.6" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="112.3,52.9 113.7,44.9 106.1,47.7" fill="#0f62fe"/><path d="M111.1 82.4 A48 48 0 0 1 82.4 111.1" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="79.1,112.3 87.1,113.7 84.3,106.1" fill="#0f62fe"/><path d="M49.6 111.1 A48 48 0 0 1 20.9 82.4" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="19.7,79.1 18.3,87.1 25.9,84.3" fill="#0f62fe"/><path d="M20.9 49.6 A48 48 0 0 1 49.6 20.9" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="52.9,19.7 44.9,18.3 47.7,25.9" fill="#0f62fe"/><text x="66.0" y="22.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">design</text><text x="114.0" y="70.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">build</text><text x="66.0" y="118.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">test</text><text x="18.0" y="70.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">learn</text><text x="66" y="73" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="600" fill="#161616">A</text></svg><span class="ftm-loop-name">Researcher A + agent</span><span class="visually-hidden">, running their own design, build, test, learn loop</span></li><li class="ftm-loop"><svg class="ftm-ring" viewBox="0 0 132 132" width="132" height="132" aria-hidden="true" focusable="false"><path d="M82.4 20.9 A48 48 0 0 1 111.1 49.6" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="112.3,52.9 113.7,44.9 106.1,47.7" fill="#0f62fe"/><path d="M111.1 82.4 A48 48 0 0 1 82.4 111.1" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="79.1,112.3 87.1,113.7 84.3,106.1" fill="#0f62fe"/><path d="M49.6 111.1 A48 48 0 0 1 20.9 82.4" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="19.7,79.1 18.3,87.1 25.9,84.3" fill="#0f62fe"/><path d="M20.9 49.6 A48 48 0 0 1 49.6 20.9" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="52.9,19.7 44.9,18.3 47.7,25.9" fill="#0f62fe"/><text x="66.0" y="22.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">design</text><text x="114.0" y="70.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">build</text><text x="66.0" y="118.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">test</text><text x="18.0" y="70.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">learn</text><text x="66" y="73" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="600" fill="#161616">B</text></svg><span class="ftm-loop-name">Researcher B + agent</span><span class="visually-hidden">, running their own design, build, test, learn loop</span></li><li class="ftm-loop"><svg class="ftm-ring" viewBox="0 0 132 132" width="132" height="132" aria-hidden="true" focusable="false"><path d="M82.4 20.9 A48 48 0 0 1 111.1 49.6" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="112.3,52.9 113.7,44.9 106.1,47.7" fill="#0f62fe"/><path d="M111.1 82.4 A48 48 0 0 1 82.4 111.1" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="79.1,112.3 87.1,113.7 84.3,106.1" fill="#0f62fe"/><path d="M49.6 111.1 A48 48 0 0 1 20.9 82.4" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="19.7,79.1 18.3,87.1 25.9,84.3" fill="#0f62fe"/><path d="M20.9 49.6 A48 48 0 0 1 49.6 20.9" fill="none" stroke="#0f62fe" stroke-width="2"/><polygon points="52.9,19.7 44.9,18.3 47.7,25.9" fill="#0f62fe"/><text x="66.0" y="22.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">design</text><text x="114.0" y="70.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">build</text><text x="66.0" y="118.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">test</text><text x="18.0" y="70.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#393939" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">learn</text><text x="66" y="73" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="600" fill="#161616">C</text></svg><span class="ftm-loop-name">Researcher C + agent</span><span class="visually-hidden">, running their own design, build, test, learn loop</span></li></ul>
+<svg class="ftm-stems" viewBox="0 0 600 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g stroke="#525252" stroke-width="2" vector-effect="non-scaling-stroke" shape-rendering="crispEdges"><line x1="100" y1="0" x2="100" y2="16" vector-effect="non-scaling-stroke"/><line x1="300" y1="0" x2="300" y2="16" vector-effect="non-scaling-stroke"/><line x1="500" y1="0" x2="500" y2="16" vector-effect="non-scaling-stroke"/></g></svg><div class="ftm-bus" aria-hidden="true"></div>
+<div class="ftm-dests">
+<div class="ftm-dest">
+<div class="ftm-io"><p class="ftm-in"><span class="ftm-io-label">EVERY LOOP WRITES <span aria-hidden="true">&darr;</span></span>Experiments, results, reasoning, and failed approaches</p><span class="ftm-arrows" aria-hidden="true"><span class="ftm-a ftm-a-down"><svg class="ftm-shaft" viewBox="0 0 2 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect width="2" height="10" fill="#525252" shape-rendering="crispEdges"/></svg></span><span class="ftm-a ftm-a-up"><svg class="ftm-shaft" viewBox="0 0 2 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect width="2" height="10" fill="#525252" shape-rendering="crispEdges"/></svg></span></span><p class="ftm-out"><span class="ftm-io-label"><span aria-hidden="true">&uarr;</span> EVERY LOOP READS</span>What the whole team has learned</p></div>
+<div class="ftm-db"><span class="ftm-place-name">Shared knowledge base</span></div>
+</div>
+<div class="ftm-dest">
+<div class="ftm-io"><p class="ftm-in"><span class="ftm-io-label">AGENTS POST <span aria-hidden="true">&darr;</span></span>Progress, and requests for a decision</p><span class="ftm-arrows" aria-hidden="true"><span class="ftm-a ftm-a-down"><svg class="ftm-shaft" viewBox="0 0 2 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect width="2" height="10" fill="#525252" shape-rendering="crispEdges"/></svg></span><span class="ftm-a ftm-a-up"><svg class="ftm-shaft" viewBox="0 0 2 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect width="2" height="10" fill="#525252" shape-rendering="crispEdges"/></svg></span></span><p class="ftm-out"><span class="ftm-io-label"><span aria-hidden="true">&uarr;</span> RESEARCHERS REPLY</span>Direction for the next experiments</p></div>
+<div class="ftm-chan"><div class="ftm-chan-head"><span class="ftm-hash" aria-hidden="true">#</span><span class="ftm-place-name">Shared channel, like Slack</span></div><div class="ftm-chan-body" aria-hidden="true"><span class="ftm-line"><span class="ftm-av ftm-av-a"></span><span class="ftm-bar" style="width:72%"></span></span><span class="ftm-line"><span class="ftm-av ftm-av-r"></span><span class="ftm-bar" style="width:52%"></span></span></div></div>
+</div>
+</div>
+<figcaption id="fig3-cap">Fig. 3 &mdash; A possible future: individual loops share one knowledge base and one channel, so each experiment starts from what the whole team has learned.</figcaption>
+</figure>
+<h2 class="post-h2" id="section-4">04 — DAM provides the infrastructure. Researchers run the experiments.</h2>
+<p class="post-p">As IBM’s AI Industrialization Team, we seek to support researchers transitioning towards this vision of AI-native automation of the experimental process. In our work, we’ve witnessed researchers come up against a set of common problems when they began to bring agents into their design-build-test-learn loops. We built <a href="https://github.com/dam-agents/dam">DAM</a>, IBM Research’s open source platform for running AI-native research, to address these issues so researchers can automate more of their experimental process. In DAM, an agent can autonomously run the design-build-test-learn loop round after round. It works in an isolated workspace, uses the tools the experiment needs without ever holding the credentials, starts on the schedule the researcher sets, and checks in through Slack when a result needs human judgment. A researcher can hand an agent a single step of the loop, such as testing candidate designs, or the whole cycle.</p>
+<blockquote class="pull"><p>A researcher can hand an agent a single step of the loop, such as testing candidate designs, or the whole cycle.</p></blockquote>
+<h3 class="post-h3">DAM’s AI-native infrastructure</h3>
+<table class="post-table">
+  <tr><th scope="row">Secure sandbox</th><td>Controlled access to only the files and tools you grant.</td></tr>
+  <tr><th scope="row">Persistent environment</th><td>Keeps experiment state and results across long runs, so the researcher can close their laptop and come back.</td></tr>
+  <tr><th scope="row">Enforceable limits</th><td>Caps on each attempt and on overall spending (coming soon).</td></tr>
+  <tr><th scope="row">Telemetry and cost gates</th><td>Shows what the agent is doing and where it fails. Repeated failures or spending without progress can pause the run for review (coming soon).</td></tr>
+  <tr><th scope="row">Model interoperability</th><td>Change the model or agent tools without rebuilding the execution environment and controls.</td></tr>
+</table>
+<p class="post-p">DAM lets researchers run experiments without having to build their own infrastructure. Researchers can define the scientific questions, experimental methods, and evaluation criteria, and DAM helps them run that work securely, persistently, and within the limits they choose.</p>
+<h2 class="post-h2" id="section-5">05 — Build your own AI-native experiment in DAM</h2>
+<p class="post-p">Considering building your own AI-native experiment? You can do it in DAM today. DAM is open source, so you can deploy it on your own Kubernetes cluster from <a href="https://github.com/dam-agents/dam">github.com/dam-agents/dam</a>. IBMers can skip the setup and request access to our hosted version at <a href="https://ibm.biz/dam-docs">ibm.biz/dam-docs</a>.</p>
+<ol class="post-list"><li><strong>Describe your experiment.</strong> Create an agent and tell it in chat what you want to learn, which system to test, and how to measure a better result.</li><li><strong>Let the agent build and run it.</strong> It can clone your code, build the system, write the experiment, and run it in an isolated sandbox. Its workspace keeps code and results between sessions.</li><li><strong>Close the loop overnight.</strong> Set a schedule to wake the agent for the next round. Ask it to keep a record of what worked, what failed, and why, so each round starts with that context.</li><li><strong>Bring in your team.</strong> Turn those records into shared knowledge with one of DAM’s Knowledge starter kits: LLM Wiki builds a structured wiki with a knowledge graph you can question, and Plain Wiki keeps organized markdown files. Connect the agent to your team’s Slack so it can post progress and ask the team when a result needs human judgment. Publish results as DAM artifacts to share them.</li><li><strong>Share the loop.</strong> Once it works, package it as a starter kit so your teammates can create the same agent.</li></ol>
+<p class="post-p">You don’t have to start from scratch. DAM’s Starter Kits create a ready-to-use agent in a few clicks, for research, knowledge, software, and productivity work. Pick the Research kit whose framework fits your problem, and DAM will create an agent in an isolated sandbox with that framework installed. Then describe in chat what to improve and how to measure success. The Research kits are:</p>
+<ul class="post-list"><li><strong>OpenEvolve</strong> evolves software against a scoring function you define, generating new versions and keeping the ones that score highest.</li><li><strong>AdaEvolve</strong> optimizes code and algorithms by evolving several separate pools of candidates in parallel and shifting effort toward the most promising ones.</li><li><strong>ShinkaEvolve</strong> evolves software with fewer evaluations than a typical search, which suits problems where each test run is slow or costly.</li><li><strong>GEPA</strong> optimizes prompts, instructions, and other text by scoring each version on example tasks and having a model diagnose why the weaker ones fell short.</li><li><strong>K-Search</strong> optimizes GPU kernels, with a model proposing changes and each one evaluated on cloud GPUs through Modal.</li><li><strong>Nous</strong> runs hypothesis-driven experiments on a system you can build and measure, testing each hypothesis against controls.</li></ul>
+<p class="post-p">We’d like to hear what you build. Share it in GitHub Discussions at <a href="https://github.com/dam-agents/dam/discussions">github.com/dam-agents/dam/discussions</a>.</p>
+<ol class="post-refs">
+  <li id="ref-1">Andrej Karpathy, “autoresearch,” GitHub repository, March 2026. <a href="https://github.com/karpathy/autoresearch">https://github.com/karpathy/autoresearch</a></li>
+  <li id="ref-2">Google DeepMind, “AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms,” Google DeepMind blog, May 14, 2025. <a href="https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/">https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/</a></li>
+  <li id="ref-3">Alexander Novikov et al., “AlphaEvolve: A coding agent for scientific and algorithmic discovery,” arXiv:2506.13131, June 2025. <a href="https://arxiv.org/abs/2506.13131">https://arxiv.org/abs/2506.13131</a></li>
+</ol>
+        <div class="post-foot">
+          <span>AI Industrialization — IBM Research</span>
+          <a href="../about.html">Who we are →</a>
+        </div>
+      </div>
+
+      <aside class="post-related">
+        <span class="mono-label dim">Other posts</span>
+        <a class="related-item" href="agents-as-teammates.html"><span class="related-tags"><span class="mono related-tag">Agent infrastructure</span></span><span class="related-title">Agents as Teammates</span></a>
+        <a class="related-item" href="hello-from-ai-industrialization.html"><span class="related-tags"><span class="mono related-tag">Introductions</span></span><span class="related-title">Hello from AI Industrialization</span></a>
+        <a class="related-item" href="inside-the-software-factory.html"><span class="related-tags"><span class="mono related-tag">Autonomous development</span></span><span class="related-title">Inside the software factory: when humans stop reviewing code</span></a>
+        <a class="related-item" href="../calendar.html"><span class="related-tags"><span class="mono related-tag">Insight</span><span class="mono related-soon">Coming soon</span></span><span class="related-title">Operational discipline doesn't run on willpower</span></a>
+      </aside>
+    </div>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-col">
+      <span class="mono-label dim">IBM Research</span>
+      <span class="footer-name">AI Industrialization</span>
+      <span class="footer-blurb">IBM Research's proving ground for emerging AI.</span>
+    </div>
+    <div class="footer-col">
+      <span class="mono-label dim">Site</span>
+      <a href="../index.html">Writing</a>
+      <a href="../about.html">Who we are</a>
+      <a href="../calendar.html">What's coming</a>
+    </div>
+    <div class="footer-col">
+      <span class="mono-label dim">Focus</span>
+      <span class="footer-item">Agent infrastructure</span>
+      <span class="footer-item">Inference at scale</span>
+      <span class="footer-item">Research validation</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
