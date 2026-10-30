@@ -19,8 +19,8 @@ _None._
 
 | Date | Topic | Authors | Status |
 |---|---|---|---|
-| `2026-11-11` | [Sovereign AI: why you need a platform](content/topics/sovereign-ai.md) | Matous Havlena | scheduled |
-| `2026-11-25` | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Petr Bulanek | scheduled |
+| `2026-11-11` | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Petr Bulanek | scheduled |
+| `2026-11-25` | [Sovereign AI: why you need a platform](content/topics/sovereign-ai.md) | Matous Havlena | scheduled |
 
 ## Published
 
