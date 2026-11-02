@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **12** |
+| Ideas, not yet dated (`idea`) | **13** |
 | Scheduled or published | **6** |
 | Declined | **0** |
 
@@ -19,7 +19,7 @@ a file to `content/topics/` with `status: idea`.
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Insight (5) · Agent infrastructure (4) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Insight (5) · Agent infrastructure (4) · Autonomous development (1) · Case study (1) · Design (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
@@ -30,6 +30,7 @@ Ideas by area: Insight (5) · Agent infrastructure (4) · Case study (1) · Desi
 | [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
 | [Levels of automation](content/topics/levels-of-automation.md) | Insight | Samantha Dempsey | _unassigned_ | — |
 | [Multi-user agents and more cost-efficient agents](content/topics/multi-user-and-cost-efficient-agents.md) | Agent infrastructure | Blog committee | _unassigned_ | — |
+| [Our code review, compared with Anthropic's](content/topics/our-code-review-compared-with-anthropics.md) | Autonomous development | Samantha Dempsey | _unassigned_ | — |
 | [QA in the post-AI era](content/topics/qa-in-the-post-ai-era.md) | Insight | Samantha Dempsey | Tomas Weiss | — |
 | [Secure AI agents in enterprise](content/topics/secure-ai-agents-in-enterprise.md) | Agent infrastructure | Matous Havlena | Jan Pokorny | — |
 | [Stop guessing where the time goes](content/topics/stop-guessing-where-the-time-goes.md) | Observability | Matous Havlena | Matous Havlena | — |
