@@ -11,7 +11,7 @@ a file to `content/topics/` with `status: idea`.
 
 | | Count |
 |---|---|
-| Ideas, not yet dated (`idea`) | **13** |
+| Ideas, not yet dated (`idea`) | **14** |
 | Scheduled or published | **6** |
 | Declined | **0** |
 
@@ -19,7 +19,7 @@ a file to `content/topics/` with `status: idea`.
 
 These need an author and a `publish_date` to move onto the [calendar](CALENDAR.md).
 
-Ideas by area: Insight (5) · Agent infrastructure (4) · Autonomous development (1) · Case study (1) · Design (1) · Observability (1)
+Ideas by area: Insight (5) · Agent infrastructure (4) · Design (2) · Autonomous development (1) · Case study (1) · Observability (1)
 
 | Topic | Tag | Proposed by | Authors | Target |
 |---|---|---|---|---|
@@ -27,6 +27,7 @@ Ideas by area: Insight (5) · Agent infrastructure (4) · Autonomous development
 | [Making provider-side search accountable to platform policy](content/topics/accountable-provider-side-search.md) | Agent infrastructure | Jenna Winkler | Tomas Dvorak | — |
 | [Computer and browser use for autonomous development](content/topics/computer-use-for-autonomous-development.md) | Agent infrastructure | Jenna Winkler | Radek Jezek | — |
 | [Cutting agent costs](content/topics/cutting-agent-costs.md) | Insight | Jenna Winkler | _unassigned_ | — |
+| [Design in AI-native ways of working](content/topics/design-in-ai-native-ways-of-working.md) | Design | Samantha Dempsey | Jamie Jabbour, Samantha Dempsey | — |
 | [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
 | [Levels of automation](content/topics/levels-of-automation.md) | Insight | Samantha Dempsey | _unassigned_ | — |
 | [Multi-user agents and more cost-efficient agents](content/topics/multi-user-and-cost-efficient-agents.md) | Agent infrastructure | Blog committee | _unassigned_ | — |
