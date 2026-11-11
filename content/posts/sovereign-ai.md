@@ -2,7 +2,7 @@
 lede: "AI is becoming part of how companies build, operate, and make decisions. Sovereign AI is about having the flexibility to decide how that intelligence works inside your organization, and to change your approach as your needs evolve."
 sections: Three ways to lose control | The right to decide | The right to change your mind | When you don't need all seven | Two rights, seven pillars
 read_time: 13 min read
-cover: images/sovereign-ai-cover.png
+cover: images/sovereign-ai-pillars.png
 ---
 
 One of our workflows started failing, even though nobody on our team had changed it.
@@ -38,7 +38,7 @@ Fig. 1 — Three ways a company loses control of the AI that works inside it.
 Avoiding AI products won't fix this, and neither will building everything yourself. What helps is making sure the decisions that matter stay with you. Seven pillars describe what that takes. The first four protect the right to decide. The last three protect the right to change your mind.
 
 ![The two rights and their seven pillars. The right to decide: boundaries, security policy, records, costs. The right to change your mind: models and harnesses, building blocks, knowledge.](images/sovereign-ai-pillars.png)
-Fig. 2 — Two rights, seven pillars. Sovereignty needs both.
+Fig. 2 — Seven pillars hold up sovereign AI, grouped under the two rights they protect.
 
 ## 02 — The right to decide
 
