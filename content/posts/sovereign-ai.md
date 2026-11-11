@@ -191,7 +191,7 @@ There is still plenty to figure out. Connections have been the hardest part for 
 
 At IBM Research, we're building DAM (Deploy Agents Massively), an open source project designed around these principles. It's one way to put the pillars into practice, but it isn't the only way. You can explore the project at [github.com/dam-agents/dam](https://github.com/dam-agents/dam), or, if you're an IBMer, get started at [ibm.biz/dam-agents](https://ibm.biz/dam-agents).
 
-The bigger question is what your company needs to own, and where it is comfortable relying on someone else. We'd like to hear how you're thinking about it. Join the conversation on [GitHub Discussions](https://github.com/dam-agents/dam/discussions).
+The bigger question is what your company needs to own, and where it is comfortable relying on someone else. We'd like to hear how you're thinking about it. Join the conversation on [GitHub Discussions](https://github.com/dam-agents/dam/discussions/6517).
 
 ## References
 
