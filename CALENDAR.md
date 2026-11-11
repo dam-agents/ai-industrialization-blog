@@ -19,13 +19,13 @@ _None._
 
 | Date | Topic | Authors | Status |
 |---|---|---|---|
-| `2026-11-11` | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Petr Bulanek | scheduled |
-| `2026-11-25` | [Sovereign AI: why you need a platform](content/topics/sovereign-ai.md) | Matous Havlena | scheduled |
+| `2026-11-25` | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Petr Bulanek | scheduled |
 
 ## Published
 
 | Date | Topic | Authors | Status |
 |---|---|---|---|
+| `2026-11-11` | [The Seven Pillars of Sovereign Enterprise AI](content/topics/sovereign-ai.md) | Matous Havlena, Jenna Winkler | published |
 | `2026-10-27` | [Inside the software factory: when humans stop reviewing code](content/topics/inside-the-software-factory.md) | Radek Jezek, Samantha Dempsey | published |
 | `2026-10-14` | [Autonomous agents are changing how we conduct science](content/topics/autonomous-agents-are-changing-how-we-conduct-science.md) | Tomas Weiss, Samantha Dempsey | published |
 | `2026-09-30` | [Agents as Teammates](content/topics/agents-as-teammates.md) | Samantha Dempsey, Matous Havlena, Sarah Miller, Jenna Winkler | published |
