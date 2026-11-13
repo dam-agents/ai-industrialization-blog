@@ -13,7 +13,9 @@ Dates the team is aiming for. A `target_date` is **not** a commitment and does
 not put a post on the public site — the topic still needs a `publish_date` to
 become `scheduled`.
 
-_None._
+| Target | Topic | Status | Blocking |
+|---|---|---|---|
+| `2026-12-09` | [Design in AI-native ways of working](content/topics/design-in-ai-native-ways-of-working.md) | idea | needs a `publish_date` |
 
 ## Scheduled
 
