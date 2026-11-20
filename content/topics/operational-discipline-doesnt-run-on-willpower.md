@@ -5,10 +5,10 @@ status: scheduled
 proposed_by: Matous Havlena
 proposed_on: 2026-08-28
 authors: "Petr Bulanek"
-publish_date: 2026-11-25
+publish_date: 2026-12-09
 blurb: "How agents can help a team keep its issues, plans and meeting action items in order."
 scope_note: "Jenna Winkler, 2026-10-11: logged as 'Productivity — processes, transcripts, action items' — include meeting transcripts and action items alongside issues and epics."
-capacity_note: "Samantha Dempsey, 2026-11-13: confirmed as the next post. Petr recently had a kid; Matous Havlena is checking that he has capacity."
+capacity_note: "Samantha Dempsey, 2026-11-13: confirmed as the next post. Petr recently had a kid; Matous Havlena is checking that he has capacity. Jenna Winkler, 2026-11-20: pushed from 2026-11-25 to 2026-12-09; skipping Thanksgiving week."
 related_note: "Sibling to 'Stop guessing where the time goes' — same argument (agents are good at reading more than a human will) applied to how the team works rather than how the software runs."
 ---
 

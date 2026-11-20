@@ -15,13 +15,13 @@ become `scheduled`.
 
 | Target | Topic | Status | Blocking |
 |---|---|---|---|
-| `2026-12-09` | [Design in AI-native ways of working](content/topics/design-in-ai-native-ways-of-working.md) | idea | needs a `publish_date` |
+| `2026-12-23` | [Design in AI-native ways of working](content/topics/design-in-ai-native-ways-of-working.md) | idea | needs a `publish_date` |
 
 ## Scheduled
 
 | Date | Topic | Authors | Status |
 |---|---|---|---|
-| `2026-11-25` | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Petr Bulanek | scheduled |
+| `2026-12-09` | [Operational discipline doesn't run on willpower](content/topics/operational-discipline-doesnt-run-on-willpower.md) | Petr Bulanek | scheduled |
 
 ## Published
 

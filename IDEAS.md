@@ -29,7 +29,7 @@ Ideas by area: Agent infrastructure (5) · Insight (5) · Design (3) · Autonomo
 | [Computer and browser use for autonomous development](content/topics/computer-use-for-autonomous-development.md) | Agent infrastructure | Jenna Winkler | Radek Jezek | — |
 | [Connecting a design agent to Figma](content/topics/connecting-a-design-agent-to-figma.md) | Design | Samantha Dempsey | Jamie Jabbour | — |
 | [Cutting agent costs](content/topics/cutting-agent-costs.md) | Insight | Jenna Winkler | _unassigned_ | — |
-| [Design in AI-native ways of working](content/topics/design-in-ai-native-ways-of-working.md) | Design | Samantha Dempsey | Jamie Jabbour, Samantha Dempsey | `2026-12-09` |
+| [Design in AI-native ways of working](content/topics/design-in-ai-native-ways-of-working.md) | Design | Samantha Dempsey | Jamie Jabbour, Samantha Dempsey | `2026-12-23` |
 | [Forty people to four strangers: the SMA handover](content/topics/forty-people-to-four-strangers.md) | Case study | Sarah Miller | _unassigned_ | — |
 | [Levels of automation](content/topics/levels-of-automation.md) | Insight | Samantha Dempsey | _unassigned_ | — |
 | [Multi-user agents and more cost-efficient agents](content/topics/multi-user-and-cost-efficient-agents.md) | Agent infrastructure | Blog committee | _unassigned_ | — |
